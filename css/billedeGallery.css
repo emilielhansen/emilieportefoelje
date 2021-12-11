@@ -1,0 +1,56 @@
+
+  #portfolio{
+    border-top: #D5BC77 solid 1px;
+    text-align: center;
+    padding: 7.5em 0;
+    background: white; 
+  }
+
+    @media screen and (max-width: 1024px) {
+      #portfolio {
+        padding: 5em 0; } }
+    @media screen and (max-width: 640px) {
+      #portfolio {
+          padding: 3.125em 30px 3.125em 30px; } 
+  }
+
+  .col {
+    text-align: center;
+    background-color: #E39D8C;
+    padding: 10px;
+    margin: 30px;
+    border: #D5BC77 1px solid;
+    color: black;
+    box-shadow: 5px 5px 5px #383838;
+    transition: all .3s ease-in-out;
+    }
+
+    .col:hover{
+      transform: scale(1.1);
+    }
+
+
+    @media screen and (max-width: 900px) {
+      .col {
+        width: 100%;
+        margin: 50px; } 
+  }
+
+    @media screen and (max-width: 700px) {
+      .col {
+        width: 100%;
+        margin: 20px; } 
+  }
+
+  .row{
+    padding: 0 20px 0 20px;
+  }
+
+.row a{
+  text-decoration: none;
+  color: black;
+}
+
+.col h5{
+  text-shadow: 2px 2px #888888;
+}

@@ -1,0 +1,8 @@
+#navbarNavAltMarkup a{
+    color: black;
+    font-weight: bold;
+}
+
+#navbarNavAltMarkup a:hover{
+    color: #F1CDBE;
+}
