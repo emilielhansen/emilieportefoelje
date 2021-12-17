@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/flow.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -28,25 +29,155 @@
 <body>
   <div w3-include-html="navbar2.html"></div>
 
-  <!-- Titel + Flowbeskrivelse -->
+  <div class="content" id="content">
+
+<!-- Titel + Flowbeskrivelse -->
   <div class="titel">
 <h3>
   Flow 3 - konceptudvikling
 </h3>
-<p>
+<h5>
   I Flow 3 har vi haft om konceptudvikling. Vi har haft fokus på hvordan vi er kommet frem til resultaterne af vores projekter. 
   Dette har været ved hjælp af brugertests, designprincipper, skitser, charts og moodboards. 
-</p>
+</h5>
 </div>
 
-<!-- Opgavebeskrivelse -->
-<div class="opgavebeskrivelse">
-<h5>
-  Opgavebeskrivelse
-</h5>
-<p>
+<!-- Fokuspunkter -->
+<h4>
+  Fokuspunkter
+</h4>
 
+<p>
+  <ul>
+      <li>Konceptudvikling</li>
+      <li>Designprincpper</li>
+      <li>Brugertests</li>
+      <li>Projektstyring</li>
+      <li>Moodboard, styletile & styleguide</li>
+  </ul>
 </p>
+
+<!-- Opgavebeskrivelse -->
+<div class="opgave3">
+  <h2>
+      Opgave Flow 3.4 - Moodboard, stylescape & styleguide
+  </h2>
+  
+  <h4>
+    Opgavebeskrivelse
+  </h4>
+
+  <p>
+    Vi havde i flow 3 en opgave hvor vi skulle lave et moodboard og ud fra det moodboard 
+    skulle vi designe en sko, og lave en styleguide dertil. 
+  </p>
+
+  <h4>
+    Design af sko
+  </h4>
+
+  <p>
+    Først lavede jeg et moodboard, som skulle give fornemmelse af den stil jeg ville gå efter.
+  </p>
+  <img src="/images/portfolio/flow3/moodboard.png" alt="Flow 3 sko opgave moodboard">
+
+  <p>
+    Efterfølgende skulle jeg lave en styleguide hvor at jeg skulle give en guide til mit design. 
+  </p>
+  
+  <img src="/images/portfolio/flow3/styleguide.png" alt="Flow 3 sko opgave styleguide">
+
+<!-- Opgavebeskrivelse -->
+<div class="opgave4">
+<h2>
+    Opgave Flow 3.5 - App-udvikling
+</h2>
+
+<h4>
+  Opgavebeskrivelse
+</h4>
+
+<p>
+  I flow 3 havde jeg til opgave at udvikle et koncept til en mobil-app.
+  <br>
+  Til denne opgave skulle jeg bruge adobeXD og <a href="https://www.verdensmaalene.dk/maal">FN's 17 verdensmål.</a>
+  <br>
+  Hent den fulde opgavebeskrivelse nedenfor.
+</p>
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="/pdf-filer/flow3.4opgave.pdf">
+  Opgavebeskrivelse
+  </a>
+</button>
+
+<h4>
+  Konceptudvikling
+</h4>
+
+<p>
+  Vi valge FN's 1, 2 og 12 verdensmål og lavede en app ud fra dem. 
+  <br>
+  Virksomheden vi valgte var TooGoodToGo, og vi lavede en ny version af deres madspilds app. 
+  <br>
+  Vores koncept bestod af at fremfor virksomheder, var det privatperson som gav mad væk.
+  <br>
+  I dette projekt har vi lagt fokus på konceptudvikling. 
+  <br>
+  Vi har anvendt ting som brainstorming, skitser, persona, sitemap og flowcharts til at komme frem til vores resultat. 
+  <br>
+  Nedenunder har jeg vedhæftet vores powerpoint hvor alt om dette står og mere om projektet.
+</p>
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="/pdf-filer/flow3.4powerpoint.pdf">
+  Powerpoint konceptudvikling
+  </a>
+</button>
+
+<h4>
+Mock-up
+</h4>
+<p>
+Vi endte med at gå med et orange tema som var komplimentær farverne for den originale app. 
+<br>
+Jeg har nedenfor indsat nogle billeder af vores mock-up, men jeg har også vedhæftet den fulde mock-up under billederne.
+</p>
+
+<p>
+  Logo
+</p>
+
+<img src="/images/portfolio/flow3/fromhometohomelogo.png" style="height: 200px;"alt="Flow 3 logo">
+
+<br>
+
+<p>
+  Mock-up 
+</p>
+
+<img src="/images/portfolio/flow3/hometohome.png" alt="Flow 3 forside mock-up">
+
+<img src="/images/portfolio/flow3/hometohome2.png" alt="Flow 3 Red måltid side mock-up">
+
+<br>
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="https://xd.adobe.com/view/0ad4ad41-f21b-4364-8840-bea41af4c2d8-5f87/">
+  Se den fulde Mock-up
+  </a>
+</button>
+
+</div>
+
+<button
+    type="button"
+    class="btn btn-floating btn-sm"
+    id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</div>
 </div>
 
 
@@ -59,51 +190,17 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+    <!-- Scrollbar -->
+    <script src="js/scrollbar.js"></script>
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
 
-<script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-    </script>
+    <!-- Include -->
+    <script src="js/include.js"></script>
+
+    <!-- Knap der tager en op i toppen -->
+    <script src="js/topknap.js"></script>
   
-  <!-- Kald includeHTML scriptet -->
+    <!-- Kald includeHTML scriptet -->
     <script>
     includeHTML();
     </script>

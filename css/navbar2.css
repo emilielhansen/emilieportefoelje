@@ -23,9 +23,15 @@ a, a:hover, a:focus {
 }
 
 .content .btn{
-    background: pink;
-    border: none;
+    background: #E39D8C;
+    border: none; 
+    margin: 5px 0 5px 0;
 }
+
+#content {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -37,9 +43,11 @@ a, a:hover, a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: pink;
+    background: #E39D8C;
     color: rgb(0, 0, 0);
     transition: all 0.3s;
+    border: #D5BC77 solid 1px;
+    font-size: 15px;
 }
 
 #sidebar.active {
@@ -47,9 +55,22 @@ a, a:hover, a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: pink;
+    padding: 7px 0 0px 0;
     text-align: center;
+    background: #E39D8C;
+    text-transform: uppercase; 
+    font-weight: 700;
+    font-size: 35px;
+    text-shadow: 1px 1px #888888;
+}
+
+#sidebar .tilbageknap:hover{
+    color: #F1CDBE;
+    transition: all .3s ease-in-out;
+}
+
+.sidebar-header h3{
+    font-weight: 600;
 }
 
 #sidebar ul li a {
@@ -59,8 +80,9 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li .hover:hover {
-    color: grey;
-    background: #fff;
+    color: whitesmoke ;
+    background: #F1CDBE;
+    transition: all .3s ease-in-out;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -73,21 +95,16 @@ a[data-toggle="collapse"] {
 }
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
     display: block;
     position: absolute;
     right: 20px;
-    font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
 }
 
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #000000;
+    background: #ffffff;
 }
 
 ul.CTAs {
@@ -117,8 +134,6 @@ ul.CTAs a {
 #content.active {
     width: 100%;
 }
-
-
 
 /* ---------------------------------------------------
     MEDIAQUERIES

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/flow.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -26,16 +27,94 @@
 </head>
 
 <body>
-    <div w3-include-html="navbar2.html"></div>
-   
+<div w3-include-html="navbar2.html"></div>
+
+<div class="content" id="content">
+
 <!-- Titel + Flowbeskrivelse -->
 <div class="titel">
 <h3>
-    Flow 2 - Prototype & HTML
+    Flow 2 - Prototype & HTML, Byg din portfolio
 </h3>
-<p>
+<h5>
     I dette flow har vi haft om om prototyper og programmering i HTML og css. 
+</h5>
+</div>
+
+<!-- Fokuspunkter -->
+<div class="fokuspunkter">
+<h4>
+    Fokuspunkter
+</h4>
+
+<p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Flexbox</li>
+    </ul>
 </p>
+</div>
+
+<!-- Opgavebeskrivelse -->
+<div class="flow2">
+
+<h2>
+    Opgave Flow 2.3 - Kodning af hjemmeside
+</h2>
+
+<div class="opgavebeskrivelse">
+<h4>
+    Opgavebeskrivelse
+</h4>
+
+<p>
+    Vi skulle i denne opgave videreudvikle vores portefølje. 
+    <br>
+    Vores mock-up skulle nu laves som en rigtig hjemmeside og sættes op på vores eget domæne.
+    <br>
+    Hent den fulde opgavebeskrivelse nedenfor.
+</p>
+
+<button class="btn btn-light">
+    <a add target ="_blank" href="/pdf-filer/flow2.3opgavebeskrivelse.pdf">
+    Opgavebeskrivelse
+    </a>
+</button>
+
+</div>
+
+<!-- Billeder af hjemmesiden -->
+<h4>
+Om hjemmesiden
+</h4>
+
+<p>
+    Jeg har kodet min hjemmeside ud fra mine mock-ups som jeg har lavet i flow 1.
+    <br>
+    Nedenfor har jeg indsat et billede af forsiden men jeg har også indsat linket til hele hjemmesiden.
+</p>
+
+<img src="/images/portfolio/flow2/flow2forside.png" alt="Flow 2 Forside billede">
+
+<img src="/images/portfolio/flow2/flow2ommig.png" alt="Flow 2 om mig billede">
+
+<br>
+<button class="btn btn-light">
+    <a add target ="_blank" href="http://emilielenschau.dk/emilieportefoeljeflow2/">
+    Se hjemmesiden her
+    </a>
+</button>
+
+</div>
+
+<button
+    type="button"
+    class="btn btn-floating btn-sm"
+    id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
 </div>
 
 
@@ -49,49 +128,14 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+    <!-- Scrollbar -->
+    <script src="js/scrollbar.js"></script>
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+<!-- Include -->
+<script src="js/include.js"></script>
 
-<script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-    </script>
+    <!-- Knap der tager en op i toppen -->
+   <script src="js/topknap.js"></script>
   
   <!-- Kald includeHTML scriptet -->
     <script>

@@ -12,7 +12,7 @@ border-top: #D5BC77 solid 1px;
     border-top: #D5BC77 solid 1px;
     text-align: center;
     padding: 7.5em 0;
-    background: white; }
+    background: whitesmoke; }
   
     @media screen and (max-width: 1024px) {
       .intro {
@@ -28,7 +28,7 @@ border-top: #D5BC77 solid 1px;
     font-weight: bold;
     margin-bottom: 0.625em;
     text-transform: uppercase; 
-    text-shadow: 2px 2px #888888;}
+    text-shadow: 1px 1px #888888;}
     @media screen and (max-width: 640px) {
       #intro h2 {
         font-size: 1.875em; } 
@@ -54,6 +54,7 @@ border-top: #D5BC77 solid 1px;
 .portfolio{
     border-top: #D5BC77 solid 1px;
     }
+
 
 /* Om mig */
 #omMig{
@@ -82,7 +83,7 @@ border-top: #D5BC77 solid 1px;
     font-weight: bold;
     margin-bottom: 0.625em;
     text-transform: uppercase;
-    text-shadow: 2px 2px #888888; }
+    text-shadow: 1px 1px #888888; }
     @media screen and (max-width: 640px) {
       #omMig h2 {
         font-size: 1.875em; } 
@@ -108,12 +109,14 @@ border-top: #D5BC77 solid 1px;
     display: grid;
     height: 100%;
 }
-.billede {
-    max-width: 40%;
-    max-height: 40vh;
+iframe {
+    max-width: 100%;
+    height: auto;
     margin: auto;
-    border-radius: 5%;
+    width: 600px;
+    height: 400px;
     margin-top: 30px;
+    border: #D5BC77 solid 1px;
 }
 
 /* Kontakt */
@@ -141,17 +144,29 @@ border-top: #D5BC77 solid 1px;
     margin: 50px;
     background-color: #E39D8C !important;
     text-decoration: none;
+    transition: all .6s ease-in-out;
+    box-shadow: 5px 5px 5px #383838;
+    border: none;
+    
 }
 
 .kontakt .btn a{
   text-decoration: none;
 }
 
-.kontakt .btn-light:hover{
-    background-color: grey !important;
+.kontakt .btn:hover{
+  transform: scale(1.1);
 }
 
+.kontakt .btn-light:hover{
+    background-color: #F1CDBE !important;
+    transition: all .4s ease-in-out;
+}
 
+.kontakt a:hover{
+  color: #F1CDBE;
+  transition: all .4s ease-in-out;
+}
 
 .ikoner{
     padding: 20px;
@@ -163,7 +178,7 @@ border-top: #D5BC77 solid 1px;
   font-weight: bold;
   margin-bottom: 0.625em;
   text-transform: uppercase;
-  text-shadow: 2px 2px #888888; }
+  text-shadow: 1px 1px #888888; }
   @media screen and (max-width: 640px) {
     #kontakt h2 {
       font-size: 1.875em; } 

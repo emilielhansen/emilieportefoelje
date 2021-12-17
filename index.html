@@ -33,8 +33,6 @@
 
 <!-- Forside billede -->
 <section id="forside">
-<div>
-</div>
   
 <div class="forside">
 <img src="/images/emilie2.png" class="img-fluid" alt="Forside billede af Emilie på en strand">
@@ -43,7 +41,7 @@
 
 <!-- Portfolio intro -->
 <section id="intro">
-<div class="intro">
+<div class="intro" onclick="location.href='1semester.html';" style= "cursor: pointer;">
   <h3>Portfolio</h3>
   <p>
     Nedenunder kan du se mine projekter som jeg har lavet under min udannelse som multimediedesigner.  De er opdelt efter flows og semestre. Flows er en form for opdeling i hvert semester.  På nogen af dem kan man se mere omkring projekterne ved at trykke på knappen under.
@@ -54,7 +52,7 @@
 <!-- Mit arbejde -->
 <section id="portfolio">
 <div class="row" id="row">
-   <div class="col">
+   <div class="col" onclick="location.href='flow1.html';" style= "cursor: pointer;">
     <h3>
       Flow 1
     </h3>
@@ -63,7 +61,7 @@
       Vi havde til opgave at redigere i et billede vi selv havde taget.  
     </h6>
    </div>
-   <div class="col">
+   <div class="col" onclick="location.href='flow2.html';" style= "cursor: pointer;">
      <h3>
       Flow 2
      </h3>    
@@ -72,7 +70,7 @@
       Først har jeg lavet en mock-up af min portefølje hjemmeside. 
      </h6>
    </div>
-   <div class="col">
+   <div class="col" onclick="location.href='flow3.html';" style= "cursor: pointer;">
     <h3>
       Flow 3
     </h3>
@@ -81,7 +79,7 @@
       til en eksisterende virksomhed. Vi lavede en app til TooGoodToGo. 
     </h6>
    </div>
-   <div class="col">
+   <div class="col" onclick="location.href='flow4.html';" style= "cursor: pointer;">
     <h3>
       Flow 4
     </h3>
@@ -90,7 +88,7 @@
       Jeg har med en gruppe skulle lave en reklamevideo med en landingpage til.
     </h6>
    </div>
-   <div class="col">
+   <div class="col" onclick="location.href='flow5.html';" style= "cursor: pointer;">
     <h3>
       Flow 5
     </h3>
@@ -111,9 +109,8 @@
   i Lyngby. Jeg har kompetencer inden for billedbehandling, videoredigering og programmering. Jeg har tidligere læst til Datamatiker og har derfor erfaring med både HTML, CSS, Java & Javascript.     
 </p>
 
-<div class="billedeAfMig">
-<img class="billede"src="/images/emilie.JPG" alt="Billede af Emilie">
-</div>
+<iframe src="https://www.youtube.com/embed/AH6N0a2jBUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </div>
 </section>
 
@@ -142,10 +139,10 @@
 </button>
 
 <div class="ikoner">
-    <a href="#"><span>Facebook</span></a>
-    <a href="#"><span>Linkedin</span></a>
-    <a href="#"><span>Github</span></a>
-    <a href="#"><span>Instagram</span></a>
+    <a add target ="_blank" href="https://www.facebook.com/emilielh/"><span>Facebook</span></a>
+    <a add target ="_blank" href="linkedin.com/in/emilie-l-b90596109/"><span>Linkedin</span></a>
+    <a add target ="_blank" href="https://github.com/emilielhansen"><span>Github</span></a>
+    <a add target ="_blank" href="https://www.instagram.com/emilielhansen/"><span>Instagram</span></a>
 </div>
 
 </div>
@@ -162,40 +159,10 @@
     
 
 <!-- Javascript til at inkludere min footer/navigationsbar -->
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-      }
-    }
-  }
-  </script>
+<script src="js/include.js"></script>
 
 <!-- Kald includeHTML scriptet -->
-  <script>
-  includeHTML();
-  </script>
+  <script> includeHTML(); </script>
   </body>
 
 </html>

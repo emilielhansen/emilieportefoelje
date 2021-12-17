@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/flow.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -28,26 +29,147 @@
 <body>
   <div w3-include-html="navbar2.html"></div>
 
+  <div class="content" id="content">
+
    <!-- Titel + Flowbeskrivelse -->
    <div class="titel">
 <h3>
-  Flow 4 - Videoredigering
+  Flow 4 - SoMe Videoproduktion
 </h3>
-<p>
+<h5>
   I vores flow 4 har vi haft om videoredigering i PremierPro. 
   Vi har haft fokus på dette men også på at lave responsive sider med bootstrap som kan anvendes på både telefon og web.
-</p>
+</h5>
 </div>
 
-<!-- Opgavebeskrivelse -->
-<div class="opgavebeskrivelse">
-  <h5>
-    Opgavebeskrivelse
-  </h5>
+<!-- Fokuspunkter -->
+<div class="fokuspunkter">
+  <h4>
+    Fokuspunkter
+  </h4>
+
   <p>
-  
+    <ul>
+        <li>Video og virkemidler</li>
+        <li>Bootstrap</li>
+        <li>Illustrator</li>
+        <li>Premiere Pro</li>
+    </ul>
   </p>
+
+</div>
+
+
+<!-- Opgavebeskrivelse -->
+<h2>
+  Opgave Flow 4.6 - Videoproduktion & Landingpage
+</h2>
+
+<div class="opgavebeskrivelse">
+  <h4>
+    Opgavebeskrivelse
+  </h4>
+  <p>
+  I flow 4 skulle vi lave et sæt video til at promovere et produkt eller en service. 
+  Den skulle være designet til en SoMe platform og have en landingpage som beskriver produktet og virksomheden.
+  Hent den fulde opgavebeskrivelse nedenfor.
+  </p>
+
+  <button class="btn btn-light">
+    <a add target ="_blank" href="pdf-filer/flow4.6.pdf">
+      Opgavebeskrivelse
+    </a>
+  </button>
+
+  <h4>
+    Konceptudvikling
+  </h4>
+
+  <p>
+  Vi valgte Føtex som vores virksomhed, og har valgt at fokusere på deres opskrifter.
+  <br>
+  I forhold til konceptudvikling har vi gjort brug af brainstorming, skitser, storyboards og styleguide.
+  <br>
+  Nedenfor kan du se vores styleguide hvor at vi viser hvilke farver og den overordnede stemning.
+  <br>
+  </p>
+
+  <img src="/images/portfolio/flow4/fotexstyleguide.png" alt="Flow 4 Styleguide">
+
+  <p>
+    Vi har også lavet vores eget logo i illustrator, da dette var et af kravene til opgaven.
+  </p>
+
+  <img src="images/portfolio/flow4/foetex_logo.png" alt="Flow 4 Føtex logo">
+
+  <br>  <br>
+  Jeg har vedhæftet vores powerpoint til opgaven hvor at der er mere om vores konceptudvikling.
+  </p>
+
+  <button class="btn btn-light">
+    <a add target ="_blank" href="pdf-filer/Video-projekt.pdf">
+      Konceptudvikling
+    </a>
+  </button>
+
+  <h4>
+    Video
+  </h4>
+
+  <p>
+    Vi skulle lave tre videoer til at reklamere for vores produkt.
+    <br>
+    Nedenfor kan du se den lange version af vores video, men jeg har også linket til den korte og ultra korte.
+  </p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-RlY9P56HZg" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <br>
+
+  <button class="btn btn-light">
+    <a add target ="_blank" href="https://www.youtube.com/watch?v=4tx5Ou8eDvM&ab_channel=FrederikkeElmelundOlsen">
+   Kort video
+    </a>
+  </button>
+
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="https://www.youtube.com/watch?v=FU3CRGc_LgY&ab_channel=FrederikkeElmelundOlsen">
+  Ultra kort video
+  </a>
+</button>
+
+  <h4>
+    Landingpage
+  </h4>
+
+<p>
+  Til sidst skulle vi lave en landingpage som er den side man ville ende på efter video.
+  <br>
+  Vores fokus var at lave en informativ side men også en som var responsiv.
+  <br>
+  Nedenfor kan du se vores landingpage men jeg har også indsat linket længere nede.
+</p>
+
+<img src="/images/portfolio/flow4/føtexlandingpage.png" alt="Flow 4 Styleguide">
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="http://christinaziegler.dk/f%C3%B8tex%20landingpage/">
+    Se landingpagen her
+  </a>
+</button>
+
   </div>
+
+  <button
+  type="button"
+  class="btn btn-floating btn-sm"
+  id="btn-back-to-top">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+</div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -58,49 +180,14 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+    <!-- Scrollbar -->
+    <script src="js/scrollbar.js"></script>
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+<!-- Include -->
+<script src="js/include.js"></script>
 
-<script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-    </script>
+    <!-- Knap der tager en op i toppen -->
+   <script src="js/topknap.js"></script>
   
   <!-- Kald includeHTML scriptet -->
     <script>

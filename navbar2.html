@@ -24,16 +24,24 @@
 
 </head>
 
-<body>
+<body style="font-family: 'Source Sans Pro', sans-serif;">
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header" onclick="location.href='1semester.html';" style= "cursor: pointer;">
                 <h3>1. Semester</h3>
+
+                <div class="fixed-top" style="margin: 10px;">
+                    <a href="index.html">
+                <img src="/images/logo.png" alt=""width="30" height="30" style="float:right;" >
+                </a>
+            </div>
+
             </div>
 
             <div id="listen">
             <ul class="list-unstyled components">
+
                 <li>
                     <a class="hover" href="flow1.html">Flow 1</a>
                 </li>
@@ -50,31 +58,13 @@
                     <a class="hover" href="flow5.html">Flow 5</a>
                 </li>
                 <li>
-                    <a href="index.html" style="position:fixed; bottom:0px;">Tilbage til forsiden</a>
+                    <a class="tilbageknap" href="index.html" style="position:fixed; bottom:0px;">Tilbage til forsiden</a>
                 </li>
             </ul>
         </div>
         </nav>
-
-        <!-- Indholdet på siden  -->
-        <div class="content" id="content">
-
-            <!-- Luk sammen knap -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-light">
-                        <i class="fas fa-align-left"></i>
-                        <span></span>
-                    </button>
-                    </div>
-                </div>
-            </nav>
-
-        <!-- Om flowet  -->
         </div>
-    </div>
 
-   
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -98,6 +88,19 @@
             });
         });
     </script>
+
+<script>
+    function openNav() {
+      document.getElementById("sidenav").style.width = "250px";
+      document.getElementById("content").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidenavn").style.width = "0";
+      document.getElementById("content").style.marginLeft= "0";
+    }
+    </script>
+
 </body>
 
 </html>

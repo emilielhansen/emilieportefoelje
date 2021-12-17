@@ -19,14 +19,15 @@
     background-color: #E39D8C;
     padding: 10px;
     margin: 30px;
-    border: #D5BC77 1px solid;
     color: black;
     box-shadow: 5px 5px 5px #383838;
-    transition: all .3s ease-in-out;
+    transition: all .6s ease-in-out;
+    border-radius: 5px;
     }
 
     .col:hover{
       transform: scale(1.1);
+      background-color: #F1CDBE;
     }
 
 
@@ -51,6 +52,7 @@
   color: black;
 }
 
-.col h5{
-  text-shadow: 2px 2px #888888;
+.col h3{
+  text-shadow: 1px 1px #888888;
+  text-transform: uppercase;
 }
