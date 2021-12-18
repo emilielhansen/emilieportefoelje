@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
+    <!-- Meta-Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Flow 3</title>
-    <link rel="icon" href="images/logo.png">
-
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/navbar2.css">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/flow.css">
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    
+    <!-- Titel + Logo -->
+    <title>Flow 3</title>
+    <link rel="icon" href="images/logo.png">
 </head>
 
 <body>
-  <div w3-include-html="navbar2.html"></div>
+  <!-- Sidebaren -->
+  <div w3-include-html="sidebar.html"></div>
 
+<!---------------------
+     Sideindhold 
+---------------------->
+<div class="wrapper">
   <div class="content" id="content">
+
+      <!-- Åben/Luk sidebar knap -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn">
+                <i class="fas fa-align-left"></i>
+                <span></span>
+            </button>
+        </div>
+      </nav>
 
 <!-- Titel + Flowbeskrivelse -->
   <div class="titel">
@@ -76,16 +93,24 @@
     Design af sko
   </h4>
 
+  <h6>
+    Moodboard
+  </h6>
+
   <p>
     Først lavede jeg et moodboard, som skulle give fornemmelse af den stil jeg ville gå efter.
   </p>
-  <img src="/images/portfolio/flow3/moodboard.png" alt="Flow 3 sko opgave moodboard">
+  <img src="images/portfolio/flow3/moodboard.png" alt="Flow 3 sko opgave moodboard">
+
+  <h6>
+    Styleguide
+  </h6>
 
   <p>
     Efterfølgende skulle jeg lave en styleguide hvor at jeg skulle give en guide til mit design. 
   </p>
   
-  <img src="/images/portfolio/flow3/styleguide.png" alt="Flow 3 sko opgave styleguide">
+  <img src="images/portfolio/flow3/styleguide.png" alt="Flow 3 sko opgave styleguide">
 
 <!-- Opgavebeskrivelse -->
 <div class="opgave4">
@@ -106,7 +131,7 @@
 </p>
 
 <button class="btn btn-light">
-  <a add target ="_blank" href="/pdf-filer/flow3.4opgave.pdf">
+  <a add target ="_blank" href="pdf-filer/flow3.4opgave.pdf">
   Opgavebeskrivelse
   </a>
 </button>
@@ -130,7 +155,7 @@
 </p>
 
 <button class="btn btn-light">
-  <a add target ="_blank" href="/pdf-filer/flow3.4powerpoint.pdf">
+  <a add target ="_blank" href="pdf-filer/flow3.4powerpoint.pdf">
   Powerpoint konceptudvikling
   </a>
 </button>
@@ -144,21 +169,21 @@ Vi endte med at gå med et orange tema som var komplimentær farverne for den or
 Jeg har nedenfor indsat nogle billeder af vores mock-up, men jeg har også vedhæftet den fulde mock-up under billederne.
 </p>
 
-<p>
+<h6>
   Logo
-</p>
+</h6>
 
-<img src="/images/portfolio/flow3/fromhometohomelogo.png" style="height: 200px;"alt="Flow 3 logo">
+<img src="images/portfolio/flow3/fromhometohomelogo.png" style="height: 200px;"alt="Flow 3 logo">
 
 <br>
 
-<p>
-  Mock-up 
-</p>
+<h6>
+  Mock-up
+</h6>
 
-<img src="/images/portfolio/flow3/hometohome.png" alt="Flow 3 forside mock-up">
+<img src="images/portfolio/flow3/hometohome.png" alt="Flow 3 forside mock-up">
 
-<img src="/images/portfolio/flow3/hometohome2.png" alt="Flow 3 Red måltid side mock-up">
+<img src="images/portfolio/flow3/hometohome2.png" alt="Flow 3 Red måltid side mock-up">
 
 <br>
 

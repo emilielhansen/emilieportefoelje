@@ -1,8 +1,17 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #navbarNavAltMarkup a{
     color: black;
-    font-weight: 800;
+    font-weight: 1000;
 }
 
 #navbarNavAltMarkup a:hover{
-    color: #F1CDBE;
+    color: #E39D8C;
 }
+
+.navbar{
+    background: #F1CDBE !important;
+}
+

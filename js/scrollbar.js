@@ -1,12 +1,16 @@
+// Javascipt fra:
+// https://bootstrapious.com/p/bootstrap-sidebar
 
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
+});
+
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#content').toggleClass('luk');
+    });
+
+});

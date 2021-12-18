@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
+    <!-- Meta-Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Flow 5</title>
-    <link rel="icon" href="images/logo.png">
-
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/navbar2.css">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/flow.css">
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    
+    <!-- Titel + Logo -->
+    <title>Flow 5</title>
+    <link rel="icon" href="images/logo.png">
 </head>
+
+<!-- Sidebaren -->
+<div w3-include-html="sidebar.html"></div>
 
 <body>
 
-    <div w3-include-html="navbar2.html"></div>
-
+<!---------------------
+     Sideindhold 
+---------------------->
+  <div class="wrapper">
     <div class="content" id="content">
+
+      <!-- Åben/Luk sidebar knap -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn">
+                <i class="fas fa-align-left"></i>
+                <span></span>
+            </button>
+        </div>
+      </nav>
 
    <!-- Titel + Flowbeskrivelse -->
    <div class="titel">
@@ -66,7 +83,9 @@
       Opgavebeskrivelse
     </a>
   </button>
+  </div>
 
+  <div class="opgave">
   <h4>
     Projektplanlægning
   </h4>
@@ -115,9 +134,15 @@ Ud fra min brugertest fik jeg følgende resultater:
     Konceptudvikling
   </h4>
 
+<h6>
+  Målgruppe
+</h6>
+
+<h6>
+  Moodboards
+</h6>
+
   <p>
-    Moodboards 
-    <br>
     Det første jeg gjorde i min konceptudvikling var at lave to moodboards. 
     <br>
     Jeg har været i tvivl om hvilken vej jeg ville gå med min sides farver og stemning, og har derfor forsøgt mig i to moodboards. 
@@ -134,7 +159,7 @@ Ud fra min brugertest fik jeg følgende resultater:
     </ul>
   </p>
 
-  <img src="/images/portfolio/flow5/moodboard3.png" alt="Moodboard 1">
+  <img src="images/portfolio/flow5/moodboard3.png" alt="Moodboard 1">
 
   <p> 
     Mit andet moodboard er baseret på tre nøgleord:
@@ -145,7 +170,7 @@ Ud fra min brugertest fik jeg følgende resultater:
     </ul>
   </p>
 
-  <img src="/images/portfolio/flow5/moodboard2.png" alt="Moodboard 2">
+  <img src="images/portfolio/flow5/moodboard2.png" alt="Moodboard 2">
  
   <p>
     Jeg har valgt at gå med det lyserøde moodboard, da jeg synes det er mere spændende og minder mere om mig. 
@@ -154,9 +179,11 @@ Ud fra min brugertest fik jeg følgende resultater:
   </p>
     Ud fra mit moodboard har jeg valgt farver, skrivtype og logo.
 
+<h6>
+  Farver
+</h6>
+
   <p>
-    Farver
-    <br> 
     Jeg valgte at gå med 5 farver til mit projekt: 
     <ul>
       <li style="color: #F1CDBE;">Lys lyserød #F1CDBE</li>
@@ -167,9 +194,11 @@ Ud fra min brugertest fik jeg følgende resultater:
     </ul>
   </p>
 
-  <p>
-    Typografi
-    <br>
+<h6>
+  Typografi
+</h6>
+
+   <p>
     Til min font har jeg bestemt mig for at gå med en font som minder om min tidligere font. 
     <br> 
     Jeg kan godt lide det 'lette' og simple udtryk som den skrifttype jeg har valgt giver. 
@@ -179,35 +208,43 @@ Ud fra min brugertest fik jeg følgende resultater:
     Jeg overvejede også at bruge skriften 'Parisienne', men fandt ud af at det blev for meget. 
   </p>
 
+<h6>
+  Logo
+</h6>
+
   <p>
-    Logo 
-    <br>
     Jeg havde allerede lavet en logo sidste projekt, som var baseret på E og L i mit navn. 
     <br>
     Jeg valgte at lave mit logo lidt om så det passede bedre til mit nye farveskema og det 'lette' look.
     <br>
     <br>
     Logo før <br>
-    <img src="/images/portfolio/flow5/gammeltlogo.png" alt="Mit gamle logo">
+    <img src="images/portfolio/flow5/gammeltlogo.png" alt="Mit gamle logo">
     <br>
     Logo efter <br>
-    <img src="/images/logo.png" alt="Nye logo" width="95px">
+    <img src="images/logo.png" alt="Nye logo" width="95px">
     <br>
     Udover det havde jeg lavet et wordmark logo, som jeg tænkte jeg kunne bruge som overskrift eller til min navbar. 
     <br>
-    <img src="/images/navnlogo.png" alt="Wordmark" width="400px">
+    <img src="images/navnlogo.png" alt="Wordmark" width="400px">
   </p>
 
+  <h6>
+    Designprincipper
+  </h6>
+
+<h6>
+  Styleguide
+</h6>
+
   <p>
-    Styleguide
-    <br>
     Ud fra alle mine designvalg har jeg lavet en styleguide over min side. 
     <br>
     Her har jeg indsat font, farver, typografi, tekstur og logo. 
     <br>
     Tryk på billede for at få det op på en ny side.
     <br>
-    <a add target href="/images/portfolio/flow5/styleguide.png">
+    <a add target href="images/portfolio/flow5/styleguide.png">
     <img src="images/portfolio/flow5/styleguide.png" alt="Styleguide">
   </a>
   </p>
@@ -217,38 +254,44 @@ Ud fra min brugertest fik jeg følgende resultater:
     Skitser, wireframes & Mockup's
   </h4>
 
+<h6>
+  Skitser
+</h6>
+
   <p>
-    Skitser
-    <br>
     Det første jeg gjorde inden jeg begynder på computeren med skitser, var at tegne nogen i hånden. 
     <br>
     Jeg kiggede på en masse forskellige porteføljer for at få inspiration til min side. 
     <br> 
     Jeg vidste jeg ville have en lang forside frem for en masse små sider, udover mine flow sider.
     <br>
-    <img src="/images/portfolio/flow5/skitser.png" alt="Håndskrevede skitser">
+    <img src="images/portfolio/flow5/skitser.png" alt="Håndskrevede skitser">
 
   </p>
 
+<h6>
+  Wireframes
+</h6>
+
   <p>
-    Wireframes
-    <br>
     Jeg har til hver af mine sider lavet wireframe, sådan så jeg vidste hvor tingene skulle stå på min side. 
     <br>
     Til min 1. semester side havde jeg valgt en sidebar fremfor en header, så man nemmere kunne finde rundt i semesteret.
     <br>
     Desuden har jeg valgt venstemargen på disse sider da der er mere læsestof, fremfor centreret som jeg har på forsiden.
-    <img src="/images/portfolio/flow5/flow3wireframe.png" alt="Flow side wirefrime">
+    <img src="images/portfolio/flow5/flow3wireframe.png" alt="Flow side wirefrime">
   </p>
 
+<h6>
+  Mock-ups
+</h6>
+
   <p>
-    Mock-ups
-    <br>
     I min mock-up bestemte jeg mig for hvor jeg ville have de forskellige farver på mine sider.
     <br>
     Jeg vidste at jeg ville have nogen knapper på min side hvor at man skulle kunne hente længere versioner af opgaver, så hele siden ikke blev for lang.
     <br>
-    <img src="/images/portfolio/flow5/flow4mockup.png" alt="Flow side mock-ups">
+    <img src="images/portfolio/flow5/flow4mockup.png" alt="Flow side mock-ups">
   </p>
 
   <button class="btn btn-light">
@@ -261,16 +304,24 @@ Ud fra min brugertest fik jeg følgende resultater:
   Sitemap & Flowcharts
   </h4>
   
+<h6>
+  Sitemap
+</h6>
+
   <p>
     Efter jeg havde kodet min side havde jeg lavet en sitemap over min side. 
     <br>
-    <img src="/images/portfolio/flow5/sitemap.png" alt="Sitemap over hjemmesiden" width="600px">
-    <br>
     Ud fra min sitemap kan man se hvilke sider som kan tilgås fra min navigationsbar. 
     <br>
+    <img src="images/portfolio/flow5/sitemap.png" alt="Sitemap over hjemmesiden" width="600px">
+    
+<h6>
+  Flowchart
+</h6>
+
     Jeg har også lavet en flowchart over at sende mig en mail.
     <br>
-    <img src="/images/portfolio/flow5/flowchart.png" alt="Flowchart over sende en mail">
+    <img src="images/portfolio/flow5/flowchart.png" alt="Flowchart over sende en mail">
 
   </p>
 
@@ -285,11 +336,10 @@ Ud fra min brugertest fik jeg følgende resultater:
     <br>
   </p>
 
-  <p>
+  <h6>
     Min video
-  </p>
+  </h6>
   <iframe src="https://www.youtube.com/embed/AH6N0a2jBUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
   <br>
 
   <p>Herunder er den fulde PDF med storyboard, manuskript og virkemidlerne til min video</p>
@@ -298,10 +348,7 @@ Ud fra min brugertest fik jeg følgende resultater:
     <a add target ="_blank" href="pdf-filer/videosekvens.pdf">
       Storyboard, manuskript & virkemidler
     </a>
-  </button>
-
-  </div>
-  
+  </button>  
 
 <h4>
   Anden brugertest
@@ -314,9 +361,12 @@ Ud fra min brugertest fik jeg følgende resultater:
   <ul>
     <li>Skriv mig en mail</li>
     <li>Se mit storyboard til min video fra flow 5</li>
-    <li>Se min semester forside</li>
+    <li>Se min 1. semester forside</li>
   </ul>
 
+  <h6>
+    Feedback
+  </h6>
   Efter de skulle finde disse elementer på min portefølje, bad jeg dem komme med feedback i forhold til hvordan det var at finde frem til disse ting. 
   <br>
   Jeg bad dem også komme med andet feedback hvis de havde noget de synes der skulle laves om.
@@ -329,6 +379,9 @@ Ud fra min brugertest fik jeg følgende resultater:
     <li></li>
   </ul>
 
+  <h6>
+    Rettelser
+  </h6>
   Efter min brugertest har jeg valgt at rette følgende ting sådan så at min side var mere brugervenlig:
   <ul>
     <li></li>
@@ -337,6 +390,12 @@ Ud fra min brugertest fik jeg følgende resultater:
     <li></li>
   </ul>
 </p>
+
+<button class="btn btn-light">
+  <a add target ="_blank" href="pdf-filer/brugertest2.pdf">
+    Se hele brugertesten her
+  </a>
+</button>
 
 <h4>
   Forbedringer i fremtiden
@@ -350,8 +409,11 @@ Ud fra min brugertest fik jeg følgende resultater:
   <li>Dropdown på ’1. Semester’ på navbar </li>
   <li>Dropdown i sidebar under flows</li>
 </ul>
-
 </p>
+
+</div>
+</div>
+</div>
 
 <button
 type="button"
@@ -360,21 +422,17 @@ id="btn-back-to-top">
 <i class="fas fa-arrow-up"></i>
 </button>
 
-</div>
-
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-
+    
 <!-- Scrollbar -->
 <script src="js/scrollbar.js"></script>
-
 
 <!-- Include -->
 <script src="js/include.js"></script>
@@ -387,6 +445,9 @@ id="btn-back-to-top">
     includeHTML();
     </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

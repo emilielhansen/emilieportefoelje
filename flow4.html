@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
+    <!-- Meta-Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Flow 4</title>
-    <link rel="icon" href="images/logo.png">
-
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/navbar2.css">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/flow.css">
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    
+    <!-- Titel + Logo -->
+    <title>Flow 4</title>
+    <link rel="icon" href="images/logo.png">
 </head>
 
 <body>
-  <div w3-include-html="navbar2.html"></div>
+  <!-- Sidebaren -->
+  <div w3-include-html="sidebar.html"></div>
 
+<!---------------------
+      Sideindhold 
+---------------------->
+<div class="wrapper">
   <div class="content" id="content">
 
+      <!-- Åben/Luk sidebar knap -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn">
+                <i class="fas fa-align-left"></i>
+                <span></span>
+            </button>
+        </div>
+      </nav>
    <!-- Titel + Flowbeskrivelse -->
    <div class="titel">
 <h3>
@@ -90,11 +106,20 @@
   <br>
   I forhold til konceptudvikling har vi gjort brug af brainstorming, skitser, storyboards og styleguide.
   <br>
+
+<h6>
+  Styleguide
+</h6>
+
   Nedenfor kan du se vores styleguide hvor at vi viser hvilke farver og den overordnede stemning.
   <br>
   </p>
 
-  <img src="/images/portfolio/flow4/fotexstyleguide.png" alt="Flow 4 Styleguide">
+  <img src="images/portfolio/flow4/fotexstyleguide.png" alt="Flow 4 Styleguide">
+
+<h6>
+  Logo
+</h6>
 
   <p>
     Vi har også lavet vores eget logo i illustrator, da dette var et af kravene til opgaven.
@@ -152,7 +177,7 @@
   Nedenfor kan du se vores landingpage men jeg har også indsat linket længere nede.
 </p>
 
-<img src="/images/portfolio/flow4/føtexlandingpage.png" alt="Flow 4 Styleguide">
+<img src="images/portfolio/flow4/føtexlandingpage.png" alt="Flow 4 Styleguide">
 
 <button class="btn btn-light">
   <a add target ="_blank" href="http://christinaziegler.dk/f%C3%B8tex%20landingpage/">
