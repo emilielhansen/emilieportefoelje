@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!----------
+Head section
+----------->
   <head>
     <!-- Meta-Tags -->
     <meta charset="utf-8">
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -28,29 +31,36 @@
     <link rel="icon" href="images/logo.png">
 </head>
 
-<!-- Sidebaren -->
-<div w3-include-html="sidebar.html"></div>
-
-<body>
-
-<!---------------------
-     Sideindhold 
----------------------->
+<!-----------
+Page-content 
+------------>
+<body> 
   <div class="wrapper">
-    <div class="content" id="content">
 
-      <!-- Åben/Luk sidebar knap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn">
-                <i class="fas fa-align-left"></i>
-                <span></span>
-            </button>
-        </div>
-      </nav>
+<!------
+Sidebar 
+-------->
+<div w3-include-html="sidebar.html"></div>   
 
-   <!-- Titel + Flowbeskrivelse -->
-   <div class="titel">
+  <div class="content" id="content">
+
+<!-----------------------
+Open/Close sidebar button 
+------------------------>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" style="width: 50%;">
+      <button type="button" id="sidebarCollapse" class="btn">
+          <i class="fas fa-align-left"></i>
+          <span></span>
+      </button>
+  </div>
+</nav>
+
+<!-------------
+Title + Flow description
+-------------->
+<section id="title">
+   <div class="title">
    <h3>
     Flow 5 - Eksamensprojekt
   </h3>
@@ -63,15 +73,21 @@
 <h2>
   Opgave Flow 5.7 - Eksamensprojekt
 </h2>
+</section>
 
-<!-- Opgavebeskrivelse -->
-<div class="opgavebeskrivelse">
+<!---------------------
+Project description 5.7
+---------------------->
+<section id="projectdescription">
+<div class="projectdescription">
   <h4>
     Opgavebeskrivelse
   </h4>
 
   <p>
-    Vi har skulle tage vores portefølje fra flow 2 og videre udvikle den med vores nye viden fra flow 3 og 4. 
+    I dette flow har vi vores eksamensprojekt. Her har jeg haft til opgave at redesigne min portefølje fra flow 2. 
+    <br>
+    Jeg har skulle anvende ny viden som jeg har fået fra flow 3 og 4 og anvende dette til mit redesign.  
     <br>
     Der har været fokus på responsivtdesign, brugertest, projektplanlægning og konceptudvikling. 
     <br>
@@ -84,8 +100,13 @@
     </a>
   </button>
   </div>
+</section>
 
-  <div class="opgave">
+<!---------------
+Projectplanning
+---------------->
+<section id="flow5">
+  <div class="projectplanning">
   <h4>
     Projektplanlægning
   </h4>
@@ -95,11 +116,31 @@
   <br>
   Jeg lavede først en trello, men jeg følte jeg manglede noget hvor jeg kunne vælge dage og hvor man kunne se hvor langt man var med de forskellige opgaver.
   <br>
+  Under gantt-charten kan man se en PDF med mit projektplanlægningsvalg.
+  <br>
   Jeg valgte derfor at lave en gantt-chart og dette har fungeret rigtig godt for mig.
 </p>
 
-<img src="#" alt="Billede af min gantt-chart">
+<img src="images/portfolio/flow5/ganttchart1.png" alt="Billede af min gantt-chart">
+<img src="images/portfolio/flow5/ganttchart2.png" alt="Andet billede af min gantt-chart">
 
+<button class="btn btn-light">
+  <a add target ="_blank" href="pdf-filer/gantt-chart.pdf">
+    Se Gantt-chart som PDF 
+  </a>
+</button>
+<br>
+<button class="btn btn-light">
+  <a add target ="_blank" href="pdf-filer/projektplanlægning.pdf">
+    Projektplanlægning
+  </a>
+</button>
+
+</div>
+<!---------------
+First usertest
+---------------->
+<div class="usertest1">
 <h4>
   Første brugertest
 </h4>
@@ -129,7 +170,12 @@ Ud fra min brugertest fik jeg følgende resultater:
   <li>Fjerne navigation i footeren og kun have den i toppen (evt. med en til toppen pil)</li>
   <li>Mere kontrast mellem farver, mere guld, mere ens skriftfarve</li>
 </ul>
+</div>
 
+<!---------------
+Conceptdevelopment
+---------------->
+<div class="conceptdevelopment">
   <h4>
     Konceptudvikling
   </h4>
@@ -138,12 +184,19 @@ Ud fra min brugertest fik jeg følgende resultater:
   Målgruppe
 </h6>
 
+<p>
+  Før jeg gik i gang med min konceptudvikling, ville jeg først beslutte mig for hvilken målgruppe jeg havde for min side. 
+  Mit formål med min portefølje skulle være at vise hvem jeg er som person og hvad jeg har designet men også at fremtidige arbejdsgivere skal kunne finde min side og have lyst til at kontakte mig.
+  Derfor er målgruppen i forhold til aldersgruppen voksne i aldersgruppen 
+  <a href="https://www.avisen.dk/se-om-din-chef-er-gennemsnitlig_153939.aspx" style="text-decoration: underline;">30-60</a>, da det typisk er i denne alder at man er chef for et firma og derfor skal ansætte folk til ens virksomhed.
+</p>
+
 <h6>
   Moodboards
 </h6>
 
   <p>
-    Det første jeg gjorde i min konceptudvikling var at lave to moodboards. 
+    Det første jeg gjorde i min konceptudvikling var at lave to moodboards, så jeg kunne få en fornemmelse af min side.
     <br>
     Jeg har været i tvivl om hvilken vej jeg ville gå med min sides farver og stemning, og har derfor forsøgt mig i to moodboards. 
     <br>
@@ -173,9 +226,9 @@ Ud fra min brugertest fik jeg følgende resultater:
   <img src="images/portfolio/flow5/moodboard2.png" alt="Moodboard 2">
  
   <p>
-    Jeg har valgt at gå med det lyserøde moodboard, da jeg synes det er mere spændende og minder mere om mig. 
+    Jeg har valgt at gå med det lyserøde moodboard, da jeg synes det er mere spændende og minder mere om mig og har den stemning jeg vil skabe.
     <br>
-    Det er lidt mere ungdommeligt og mere iøjnefaldende end det andet moodboard.  
+    Det er lidt mere ungdommeligt og mere iøjnefaldende end det andet moodboard, som er mere mørkt og mystisk.
   </p>
     Ud fra mit moodboard har jeg valgt farver, skrivtype og logo.
 
@@ -233,10 +286,31 @@ Ud fra min brugertest fik jeg følgende resultater:
     Designprincipper
   </h6>
 
+  <p>
+    Da jeg har skulle designe min portefølje har jeg haft fokus på designprincipper.
+    <br>
+    Jeg har gjort brug af følgende principper: 
+    <ul>
+      <li>Typografisk hieraki</li>
+      Mange steder på min side har jeg gjort brug af forskellige skrifttype til at definere overskrifter, underoverskrifter og brødtekst.
+
+      <li>Padding</li>
+      Padding har jeg anvendt til at give mere luft omkring min tekst, så det har et mere let look.
+
+      <li>Nærhed</li>
+      Jeg har brugt kasser hvor jeg har sat teksten som hører sammen tæt, så man kan se at det som står nært sammen hører sammen.
+
+      <li>Aligment</li>
+      På min side stå tingene i aligment, feks har jeg meget tekst som har center-alignment.
+
+      <li>Gentagelser</li>
+      I min flowside har jeg mange gentagelser, sådan at siderne har ens udtryk hele vejen igennem og man kan fornemme de hører sammen.
+    </ul>
+  </p>
+
 <h6>
   Styleguide
 </h6>
-
   <p>
     Ud fra alle mine designvalg har jeg lavet en styleguide over min side. 
     <br>
@@ -248,8 +322,11 @@ Ud fra min brugertest fik jeg følgende resultater:
     <img src="images/portfolio/flow5/styleguide.png" alt="Styleguide">
   </a>
   </p>
-
-
+</div>
+<!----------------------------
+Sketches, wireframes & mockups
+----------------------------->
+<div class="sketches">
   <h4>
     Skitser, wireframes & Mockup's
   </h4>
@@ -259,14 +336,13 @@ Ud fra min brugertest fik jeg følgende resultater:
 </h6>
 
   <p>
-    Det første jeg gjorde inden jeg begynder på computeren med skitser, var at tegne nogen i hånden. 
+    Før jeg begyndte at tegne mine skitser, søgte jeg på nettet efter porteføljer sådan så at jeg kunne samle inspiration til mit redesign.
     <br>
-    Jeg kiggede på en masse forskellige porteføljer for at få inspiration til min side. 
-    <br> 
-    Jeg vidste jeg ville have en lang forside frem for en masse små sider, udover mine flow sider.
+    Efter det fandt jeg papir og blyant frem og begyndte at tegne hvordan jeg tænkte at min side skulle se ud. 
+    <br>
+    Jeg vidste at fremfor en masse små sider ville jeg laver en forside som kørte ud i et. 
     <br>
     <img src="images/portfolio/flow5/skitser.png" alt="Håndskrevede skitser">
-
   </p>
 
 <h6>
@@ -276,7 +352,7 @@ Ud fra min brugertest fik jeg følgende resultater:
   <p>
     Jeg har til hver af mine sider lavet wireframe, sådan så jeg vidste hvor tingene skulle stå på min side. 
     <br>
-    Til min 1. semester side havde jeg valgt en sidebar fremfor en header, så man nemmere kunne finde rundt i semesteret.
+    Til min 1. semester side havde jeg valgt en sidebar fremfor en header, så man nemmere kunne finde rundt i semesteret og kunne åbne den i mobiltilstand.
     <br>
     Desuden har jeg valgt venstemargen på disse sider da der er mere læsestof, fremfor centreret som jeg har på forsiden.
     <img src="images/portfolio/flow5/flow3wireframe.png" alt="Flow side wirefrime">
@@ -300,6 +376,10 @@ Ud fra min brugertest fik jeg følgende resultater:
     </a>
   </button>
 
+<!----------------------------
+Sitemap & Flowcharts
+----------------------------->
+<div class="maps">
   <h4>
   Sitemap & Flowcharts
   </h4>
@@ -324,7 +404,12 @@ Ud fra min brugertest fik jeg følgende resultater:
     <img src="images/portfolio/flow5/flowchart.png" alt="Flowchart over sende en mail">
 
   </p>
+</div>
 
+<!---------------
+Videosequence
+---------------->
+<div class="videosequence">
   <h4>
     Videosekvens
   </h4>
@@ -349,7 +434,12 @@ Ud fra min brugertest fik jeg følgende resultater:
       Storyboard, manuskript & virkemidler
     </a>
   </button>  
+</div>
 
+<!---------------
+Second usertest
+---------------->
+<div class="usertest2">
 <h4>
   Anden brugertest
 </h4>
@@ -373,22 +463,18 @@ Ud fra min brugertest fik jeg følgende resultater:
   <br>
   Jeg fik følgende resultater:
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Svært at finde hjem knap på semester/flow siderne</li>
+    <li>Linked-in link virkede ikke</li>
+    <li>Navigationsbaren er svær at læse fordi den er gennemsigtig</li>
   </ul>
 
   <h6>
     Rettelser
   </h6>
-  Efter min brugertest har jeg valgt at rette følgende ting sådan så at min side var mere brugervenlig:
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+
+  Efter mine resultater fra min brugertest har jeg rettet alle kommentarene.
+  <br>
+  Læs mere om min brugertest ved at klikke på knappen nedenfor.
 </p>
 
 <button class="btn btn-light">
@@ -396,7 +482,12 @@ Ud fra min brugertest fik jeg følgende resultater:
     Se hele brugertesten her
   </a>
 </button>
+</div>
 
+<!---------------
+Future development
+---------------->
+<div class="futuredevelopment">
 <h4>
   Forbedringer i fremtiden
 </h4>
@@ -404,17 +495,24 @@ Ud fra min brugertest fik jeg følgende resultater:
 <p>Herunder har jeg lavet en liste med ting som jeg gerne vil rette i fremtiden eller ting jeg ville have lavet hvis jeg havde mere tid.
 
 <ul>
-  <li>Ikoner på kontakt</li>
-  <li>Gennemsigtig til solid navbar</li>
-  <li>Dropdown på ’1. Semester’ på navbar </li>
-  <li>Dropdown i sidebar under flows</li>
+  <li>Ikoner fremfor tekst hvor mine sociale medier står.</li>
+  <li>Gennemsigtig til solid navbar når man ruller længere ned på siden.</li>
+  <li>Dropdown på ’1. Semester’ på navbar, hvor man kan vælge de forskellige flows. </li>
+  <li>Dropdown i sidebar under flows, så man nemmere kan navigere rundt i flowsne.</li>
+  <li>Når man trykker på sidebar-luk knappen så skal sideindholdet fylde hele siden i webbrowser tilstand.</li>
 </ul>
 </p>
+</div>
+
 
 </div>
 </div>
 </div>
+</section>
 
+<!--------------------
+Back to the top button
+--------------------->
 <button
 type="button"
 class="btn btn-floating btn-sm"
@@ -422,34 +520,31 @@ id="btn-back-to-top">
 <i class="fas fa-arrow-up"></i>
 </button>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-<!-- Scrollbar -->
-<script src="js/scrollbar.js"></script>
+<!-------------------
+Javascript & jQuery
+-------------------->
+     <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<!-- Include -->
-<script src="js/include.js"></script>
+    <!-- Scrollbar -->
+    <script src="js/scrollbar.js"></script>
+ 
+    <!-- Include -->
+    <script src="js/include.js"></script>
+ 
+    <!-- To the top button -->
+    <script src="js/topbutton.js"></script>
 
-    <!-- Knap der tager en op i toppen -->
-   <script src="js/topknap.js"></script>
-  
-  <!-- Kald includeHTML scriptet -->
-    <script>
-    includeHTML();
-    </script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include script called -->
+     <script>
+     includeHTML();
+     </script>
 
 </body>
-
-
 </html>

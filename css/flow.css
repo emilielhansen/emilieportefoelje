@@ -1,5 +1,43 @@
+/*******************
+Page content styling
+*******************/
+#content .navbar {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+   position: relative;
+   width: calc(100% + 250px);
+}
+
+.textcolumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.lists ul li{
+    padding: 0 20px 0px 20px;
+}
+
+.lists h4{
+    padding: 0 20px 20px 20px;
+}
+
 /************
-Tekst Styling
+Text Styling
 *************/
 #content h2{
     text-shadow: 5px;
@@ -13,9 +51,8 @@ Tekst Styling
     text-align: center;
     text-shadow: 5px;
     text-transform: uppercase; 
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 35px;
-    text-shadow: 1px 1px #888888;
     margin-left: 35px;
 }
 
@@ -43,26 +80,35 @@ Tekst Styling
 }
 
 #content li{
-    list-style-type:circle;
+    list-style-type: circle;
 }
 
-/************
-Knap styling
-*************/
+/**************
+Button styling
+**************/
+
+/* Close sidebar button */
+#content .container-fluid{
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}
+
+#content .btn{
+    background: #E39D8C;
+    border: none; 
+    margin: 10px 0 10px 0;
+    box-shadow: 2px 2px 2px #6e6e6e;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
 #content .btn-light:hover{
     background-color: #F1CDBE !important;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
-#content .btn-light{
-background-color: #E39D8C !important;
-text-decoration: none;
-transition: all .6s ease-in-out;
-box-shadow: 2px 2px 2px #383838;
-border: none;
-}
-
+/* Back to the top button */
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -74,7 +120,7 @@ border: none;
   }
 
 /********************
-Billede/Video styling
+Picture/Video styling
 *********************/
 #content img{
         max-width: 90%;
@@ -83,7 +129,7 @@ Billede/Video styling
         padding: 10px 0 10px 0;
 }
 
-  iframe {
+iframe {
     max-width: 100%;
     height: auto;
     margin: auto;

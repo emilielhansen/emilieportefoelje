@@ -1,261 +1,112 @@
-body{
-    font-family: 'Source Sans Pro', sans-serif;
+/********************
+Design for whole page
+********************/
+html{
+  scroll-behavior: smooth;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Forside */
-.forside{
-border-top: #D5BC77 solid 1px;
+/****************
+Frontpage-picture
+****************/
+#frontpage{
+  border-top: #D5BC77 solid 1px;
 }
 
+/* Repsonsive-design make picture stay below navbar */
 @media screen and (max-width: 1024px) {
-  .forside {
-    padding-top: 30px; } }
+  #frontpage {
+   padding-top: 30px; } }
+
 @media screen and (max-width: 640px) {
-  .forside {
-  padding-top: 50px; }
+  #frontpage {
+   padding-top: 50px; }
   }
 
-/* Portfolio intro*/
-.intro{
+/*************
+Intro-section
+*************/
+#intro{
     border-top: #D5BC77 solid 1px;
-    text-align: center;
-    padding: 7.5em 0;
-    background: whitesmoke; }
+    padding:  110px 0;
+    background: whitesmoke; 
+}
   
-    @media screen and (max-width: 1024px) {
-      .intro {
-        padding: 5em 0; } }
-    @media screen and (max-width: 640px) {
-      .intro {
-          padding: 3.125em 30px 3.125em 30px; } 
-  }
-
-  #intro h3{
-    font-size: 2.5em;
-    letter-spacing: 4px;
-    font-weight: bold;
-    margin-bottom: 0.625em;
-    text-transform: uppercase; 
-    text-shadow: 1px 1px #888888;}
-    @media screen and (max-width: 640px) {
-      #intro h2 {
-        font-size: 1.875em; } 
-  }
-
-  #intro p{
-  font-size: 1.375em;
-  line-height: 1.4em;
-  padding: 0 20%;
-  margin-top: 1em; }
+/* Responsive design page size */
   @media screen and (max-width: 1024px) {
-    /* line 982, scss/style.scss */
-    #intro p {
-      padding: 0 10%; } }
+    #intro {
+      padding: 70px 0; } }
   @media screen and (max-width: 640px) {
-    /* line 982, scss/style.scss */
-    #intro p {
-      padding: 0;
-      font-size: 1.125em; } 
+    #intro {
+        padding: 50px 30px 50px 30px; } 
 }
 
-/* Portfolio */
-.portfolio{
-    border-top: #D5BC77 solid 1px;
-    }
-
-
-/* Om mig */
-#omMig{
-  border-top: #D5BC77 solid 1px;
-  text-align: center;
-  padding: 7.5em 0;
-  background: white; 
-  background-image: url(images/kalktekstur.jpg);
-  background-size: cover;
-  object-fit: cover;
-  color: black;
-  }
-
-  @media screen and (max-width: 1024px) {
-    #omMig {
-      padding: 10em 0; } }
-  @media screen and (max-width: 640px) {
-    #omMig {
-      padding: 3.125em 0;
-    padding: 3.125em 30px 3.125em 30px ; }
-    }
-
-  #omMig h3{
-    font-size: 2.5em;
+/* Headline */
+#intro h3{
+    font-size: 50px;
     letter-spacing: 4px;
-    font-weight: bold;
-    margin-bottom: 0.625em;
+    font-weight: bolder;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    text-shadow: 1px 1px #888888; }
-    @media screen and (max-width: 640px) {
-      #omMig h2 {
-        font-size: 1.875em; } 
   }
 
-  #omMig p{
-  font-size: 1.375em;
-  line-height: 1.4em;
+/* Responsive design font size */
+    @media screen and (max-width: 640px) {
+      #intro h3 {
+      font-size: 30px; } 
+  }
+
+/* Paragraph */
+#intro p{
+  font-size: 20px;
+  line-height: 30px;
   padding: 0 20%;
-  margin-top: 1em; }
+}
+
+/* Responsive design paragraph */
   @media screen and (max-width: 1024px) {
-    /* line 982, scss/style.scss */
-    #omMig p {
+    #intro p {
       padding: 0 10%; } }
   @media screen and (max-width: 640px) {
-    /* line 982, scss/style.scss */
-    #omMig p {
+    #intro p {
       padding: 0;
-      font-size: 1.125em; } 
-}
-  
-.billedeAfMig {
-    display: grid;
-    height: 100%;
-}
-iframe {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    width: 600px;
-    height: 400px;
-    margin-top: 30px;
-    border: #D5BC77 solid 1px;
+      font-size: 18px; } 
 }
 
-/* Kontakt */
-#kontakt{
-  border-top: #D5BC77 solid 1px;
-  text-align: center;
-  padding: 7.5em 0;
-  background: white; }
-
-  @media screen and (max-width: 1024px) {
-    #kontakt {
-      padding: 5em 0; } }
-  @media screen and (max-width: 640px) {
-    #kontakt {
-        padding: 3.125em 30px 3.125em 30px; } 
+/*********
+Portofolio
+*********/
+#portfolio{
+    border-top: #D5BC77 solid 1px;
 }
-
-.kontakt .button a{
-    text-decoration: none;
-    font-size: 2vw;
-}
-
-.kontakt .btn{
-    padding: 15px;
-    margin: 50px;
-    background-color: #E39D8C !important;
-    text-decoration: none;
-    transition: all .6s ease-in-out;
-    box-shadow: 5px 5px 5px #383838;
-    border: none;
-    
-}
-
-.kontakt .btn a{
-  text-decoration: none;
-}
-
-.kontakt .btn:hover{
-  transform: scale(1.1);
-}
-
-.kontakt .btn-light:hover{
-    background-color: #F1CDBE !important;
-    transition: all .4s ease-in-out;
-}
-
-.kontakt a:hover{
-  color: #F1CDBE;
-  transition: all .4s ease-in-out;
-}
-
-.ikoner{
-    padding: 20px;
-}
-
-.kontakt h3{
-  font-size: 2.5em;
-  letter-spacing: 4px;
-  font-weight: bold;
-  margin-bottom: 0.625em;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #888888; }
-  @media screen and (max-width: 640px) {
-    #kontakt h2 {
-      font-size: 1.875em; } 
-}
-
-.kontakt p{
-  font-size: 1.375em;
-  line-height: 1.4em;
-  padding: 0 20%;
-  margin-top: 1em;}
-
-  @media screen and (max-width: 1024px) {
-    /* line 982, scss/style.scss */
-    #kontakt p {
-      padding: 0 10%; } }
-  @media screen and (max-width: 640px) {
-    /* line 982, scss/style.scss */
-    #kontakt p {
-      padding: 0;
-      font-size: 1.125em; } 
-}
-
-.kontakt a:hover{
-  text-decoration: none;
-}
-
-/* Sociale medier */ 
-.kontakt .ikoner{
-    padding: 20px;
-}
-
-.kontakt .ikoner a{
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase; 
-}
-
-.kontakt .ikoner a:hover{
-    color: #F1CDBE;
-}
-
-/* Flow bokse */
-
 
 #portfolio{
   border-top: #D5BC77 solid 1px;
-  text-align: center;
-  padding: 7.5em 0;
+  padding:  110px 0;
   background: white; 
 }
 
-  @media screen and (max-width: 1024px) {
-    #portfolio {
-      padding: 5em 0; } }
-  @media screen and (max-width: 640px) {
-    #portfolio {
-        padding: 3.125em 30px 3.125em 30px; } 
+/* Responsive design page size */
+@media screen and (max-width: 1024px) {
+  #portfolio {
+    padding: 70px 0; } }
+@media screen and (max-width: 640px) {
+  #portfolio {
+      padding: 50px 30px 50px 30px; } 
 }
 
-.col {
-  text-align: center;
-  background-color: #E39D8C;
-  padding: 10px;
-  margin: 30px;
-  color: black;
-  box-shadow: 5px 5px 5px #383838;
-  transition: all .6s ease-in-out;
-  border-radius: 5px;
+/***********
+Flow section
+***********/
+
+  .col {
+   background-color: #E39D8C;
+   padding: 10px;
+   margin: 30px;
+   box-shadow: 5px 5px 5px #6e6e6e;
+   transition: all .6s ease-in-out;
+   border-radius: 5px;
   }
 
   .col:hover{
@@ -263,7 +114,17 @@ iframe {
     background-color: #F1CDBE;
   }
 
+  .col h3{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    }
 
+  .row{
+    padding: 0 20px 0 20px;
+  }  
+
+/* Responsive design box size */
   @media screen and (max-width: 900px) {
     .col {
       width: 100%;
@@ -276,23 +137,154 @@ iframe {
       margin: 20px; } 
 }
 
-.row{
-  padding: 0 20px 0 20px;
+/*******
+About me
+********/
+#aboutme{
+  border-top: #D5BC77 solid 1px;
+  padding: 110px 0;
+  background: whitesmoke; 
 }
 
-.row a{
-text-decoration: none;
-color: black;
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  #aboutme {
+    padding: 70px 0; } }
+@media screen and (max-width: 640px) {
+  #aboutme {
+    padding: 50px 30px 50px 30px; } 
 }
 
-.col h3{
-text-shadow: 1px 1px #888888;
-text-transform: uppercase;
+/* Headline */
+#aboutme h3{
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
+/* Responsive design font size */
+  @media screen and (max-width: 640px) {
+    #aboutme h3 {
+    font-size: 30px; } 
+}
 
+/* Paragraph */
+  #aboutme p{
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 20%;
+}
 
+/* Responsive design paragraph */
+  @media screen and (max-width: 1024px) {
+    #aboutme p {
+      padding: 0 10%; } }
+  @media screen and (max-width: 640px) {
+    #aboutme p {
+      padding: 0;
+      font-size: 18px; } 
+}
 
+iframe {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    border: #D5BC77 solid 1px;
+}
 
+/**************
+Contact section
+**************/
+#contact{
+  border-top: #D5BC77 solid 1px;
+  text-align: center;
+  padding: 110px 0;
+  background: white; }
 
+/* Responsive design */
+  @media screen and (max-width: 1024px) {
+    #contact {
+      padding: 70px 0; } }
+  @media screen and (max-width: 640px) {
+    #contact {
+        padding: 50px 30px 50px 30px; } 
+}
 
+/* Headline */
+#contact h3{
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Responsive design font size */
+  @media screen and (max-width: 640px) {
+    #contact h3 {
+    font-size: 40px; } 
+}
+
+/* Paragraph */
+#contact p{
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 20%;
+}
+
+/* Responsive design paragraph */
+  @media screen and (max-width: 1024px) {
+    #contact p {
+      padding: 0 10%; } }
+  @media screen and (max-width: 640px) {
+    #contact p {
+      padding: 0;
+      font-size: 18px; } 
+}
+
+/* Button */
+.contact .btn{
+    padding: 10px;
+    margin: 30px;
+    background-color: #E39D8C !important;
+    box-shadow: 5px 5px 5px #6e6e6e;
+    border: none;
+}
+
+.contact .btn a{
+  text-decoration: none;
+}
+
+.contact .btn-light:hover{
+    background-color: #F1CDBE !important;
+    transition: all .6s ease-in-out;
+    transform: scale(1.1);
+} 
+
+@media screen and (max-width: 640px) {
+  #contact .btn {
+  font-size: 16px; } 
+}
+
+/*****************
+Social media icons
+*****************/
+.contact .icons{
+    padding-top: 20px;
+}
+
+.contact .icons a{
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; 
+}
+
+.contact .icons a:hover{
+    color: #F1CDBE;
+}

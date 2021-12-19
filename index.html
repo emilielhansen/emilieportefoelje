@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 
+<!----------
+Head section
+----------->
   <head>
     <!-- Meta-Tags -->
     <meta charset="utf-8">
@@ -17,46 +20,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     
-    <!-- Titel + Logo -->
-    <title>Emilie L. Hanse </title>
+    <!-- Title + Logo -->
+    <title>Emilie L. Hansen </title>
     <link rel="icon" href="images/logo.png">
   </head>
 
-  <!-- Navigationsbar -->
-  <div w3-include-html="navbar.html"></div>
+<!------------
+Navigationbar 
+------------->
+<div w3-include-html="navbar.html"></div>
 
-<!---------------------
-     Sideindhold 
----------------------->
-<body id="top" style="font-family: 'Source Sans Pro', sans-serif;"> 
+<!----------
+Page-content
+------------>
+<body style="font-family: 'Source Sans Pro', sans-serif;"> 
 
-<!-- Forside billede -->
-<section id="forside">
-  
-<div class="forside">
+<!---------------
+Frontpage-picture 
+---------------->
+<section id="frontpage">
+<div class="frontpage">
 <img src="images/emilie2.png" class="img-fluid" alt="Forside billede af Emilie på en strand">
 </div>
 </section>
 
-<!-- Portfolio intro -->
+<!-----------
+Intro section
+------------->
 <section id="intro">
 <div class="intro" onclick="location.href='1semester.html';" style= "cursor: pointer;">
   <h3>Portfolio</h3>
   <p>
-    Nedenunder kan du se mine projekter som jeg har lavet under min udannelse som multimediedesigner.  De er opdelt efter flows og semestre. Flows er en form for opdeling i hvert semester.  På nogen af dem kan man se mere omkring projekterne ved at trykke på knappen under.
+    Nedenunder kan du se mine projekter som jeg har lavet under min udannelse som multimediedesigner.  De er opdelt efter flows og semestre. Flows er en form for opdeling i hvert semester, hvor man har om forskellige emner og projekter hvert flow. 
+    Klik på en af kasserne nedenfor for at lære mere omkring flowet, eller klik på denne kasse og kom ind på første semester.
   </p>
 </div>
 </section>
 
-<!-- Mit arbejde -->
+<!----------------
+Portfolio-columns
+----------------->
 <section id="portfolio">
 <div class="row" id="row">
+
+  <!-- Column 1 -->
    <div class="col" onclick="location.href='flow1.html';" style= "cursor: pointer;">
     <h3>
       Flow 1
@@ -66,6 +79,7 @@
       Vi havde til opgave at redigere i et billede vi selv havde taget.  
     </h6>
    </div>
+   <!-- Column 2 -->
    <div class="col" onclick="location.href='flow2.html';" style= "cursor: pointer;">
      <h3>
       Flow 2
@@ -75,6 +89,7 @@
       Først har jeg lavet en mock-up af min portefølje hjemmeside. 
      </h6>
    </div>
+   <!-- Column 3 -->
    <div class="col" onclick="location.href='flow3.html';" style= "cursor: pointer;">
     <h3>
       Flow 3
@@ -84,6 +99,7 @@
       til en eksisterende virksomhed. Vi lavede en app til TooGoodToGo. 
     </h6>
    </div>
+   <!-- Column 4 -->
    <div class="col" onclick="location.href='flow4.html';" style= "cursor: pointer;">
     <h3>
       Flow 4
@@ -93,6 +109,7 @@
       Jeg har med en gruppe skulle lave en reklamevideo med en landingpage til.
     </h6>
    </div>
+   <!-- Column 5 -->
    <div class="col" onclick="location.href='flow5.html';" style= "cursor: pointer;">
     <h3>
       Flow 5
@@ -104,71 +121,72 @@
 </div>
 </section>
 
-<!-- Om mig -->
-<section id="omMig" >
-<div class="omMig">
+<!--------------
+About me section
+--------------->
+<section id="aboutme" >
+<div class="aboutme">
 <h3>Om mig</h3>
 
 <p>
   Mit navn er Emilie L. Hansen, jeg er 22 år gammel og jeg kommer fra Fredensborg. Lige nu læser jeg til multimediedesigner på CphBusiness 
-  i Lyngby. Jeg har kompetencer inden for billedbehandling, videoredigering og programmering. Jeg har tidligere læst til Datamatiker og har derfor erfaring med både HTML, CSS, Java & Javascript.     
+  i Lyngby på første semester. Jeg har tidligere læst til Datamatiker og har derfor erfaring med både HTML, CSS, Java & Javascript derfra, men har også kompetencer inden for billedbehandling og videoredigering.
 </p>
 
+<!-- Video -->
 <iframe src="https://www.youtube.com/embed/AH6N0a2jBUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 </div>
 </section>
 
-<!-- Kontakt mig -->
-
-<section id="kontakt" role="main">
-
-<div class="kontakt">
-
+<!-------------
+Contact section
+-------------->
+<section id="contact" role="main">
+<div class="contact">
   <h3>
-    Kunne du tænkte dig
-    <br>
-    at høre mere fra mig?
+    Kunne du tænkte dig at høre mere fra mig?
   </h3>
 
   <p>
-    Kan du lide mit arbejde og vil høre mere fra mig kan du sende mig 
-    <br>
+    Kan du lide mit arbejde og kunne tænkte dig at høre mere fra mig kan du sende mig 
     en mail nedenfor eller skrive til mig på en af mine sociale medier.
   </p>
 
+<!-- Mail-button -->
 <button type="button" class="btn btn-light active btn-lg">
 <a id="send-mail" class="button" href="mailto:emilie.lenschau@gmail.com" style="color: black;">
   <span aria-hidden="true" class="icon-mail" role="button" aria-pressed="true"></span>
-  <i class="fa fa-envelope" style="color: white;"></i> emilie.lenschau@gmail.com</a>
+  <i class="fa fa-envelope" style="color: white;"></i> <br> emilie.lenschau@gmail.com</a>
 </button>
 
-<div class="ikoner">
+<!-- Social-media buttons -->
+<div class="icons">
     <a add target ="_blank" href="https://www.facebook.com/emilielh/"><span>Facebook</span></a>
-    <a add target ="_blank" href="linkedin.com/in/emilie-l-b90596109/"><span>Linkedin</span></a>
+    <a add target ="_blank" href="https://www.linkedin.com/in/emilie-l-b90596109/"><span>Linkedin</span></a>
     <a add target ="_blank" href="https://github.com/emilielhansen"><span>Github</span></a>
     <a add target ="_blank" href="https://www.instagram.com/emilielhansen/"><span>Instagram</span></a>
 </div>
-
 </div>
 </section>
-<!-- Footer -->
+
+<!-------------
+Footer sektion
+-------------->
 <div w3-include-html="footer.html"></div>
 
-
-    <!-- JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-----------------
+Javascript & jQuery
+------------------>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
-
-<!-- Javascript til at inkludere min footer/navigationsbar -->
+<!-- Javascript include for footer/navbar -->
 <script src="js/include.js"></script>
 
-<!-- Kald includeHTML scriptet -->
+<!-- Call include javascript -->
   <script> includeHTML(); </script>
-  </body>
-
+  
+</body>
 </html>
 

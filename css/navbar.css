@@ -1,17 +1,20 @@
+/*************
+Navbar design  
+*************/
 body{
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-#navbarNavAltMarkup a{
-    color: black;
-    font-weight: 1000;
-}
-
-#navbarNavAltMarkup a:hover{
-    color: #E39D8C;
 }
 
 .navbar{
     background: #F1CDBE !important;
 }
 
+#navbarNavAltMarkup a{
+    color: black;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+#navbarNavAltMarkup a:hover{
+    color: #E39D8C;
+}

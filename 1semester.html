@@ -1,77 +1,128 @@
 <!DOCTYPE html>
 <html>
 
+<!----------
+Head section
+----------->
 <head>
+    <!-- Meta-Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>1. Semester</title>
-    <link rel="icon" href="images/logo.png">
-
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/sidebar.css">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/flow.css">
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    
     <!-- Font -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    
+    <!-- Titel + Logo -->
+    <title>1. Semester</title>
+    <link rel="icon" href="images/logo.png">
 </head>
 
+<!-----------
+Page-content 
+------------>
 <body>
-    <div w3-include-html="sidebar.html"></div>
-    <div class="content" id="content">
 
-         <!-- Åben/Luk sidebar knap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn">
-                <i class="fas fa-align-left"></i>
-                <span></span>
-            </button>
-        </div>
-      </nav>
+<!------
+Sidebar 
+-------->
+<div w3-include-html="sidebar.html"></div>
 
-        <h3>
-            1. Semester 
-        </h3>
+<div class="content" id="content">
 
+<!-----------------------
+Open/Close sidebar button 
+------------------------>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn">
+            <i class="fas fa-align-left"></i>
+            <span></span>
+        </button>
     </div>
+  </nav>
 
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <h3>1. Semester </h3>
+
+<div class="lists">
+<div class="textcolumn">
+<!-----------------------------
+Focus points for whole semester 
+------------------------------->
+<div class="focus">
+    <h4>Fokus punkter for semesteret</h4>
+    <ul>
+        <li>Prototyping</li>
+        <li>Konceptudvkling</li>
+        <li>Projektplanlægning</li>
+        <li>Billedebehandling</li>
+        <li>Videoredigering</li>
+    </ul>
+</div>
+
+<!----------------
+Programs learned 
+----------------->
+<div class="programs">
+    <h4>Lærte programmer</h4>
+    <ul>
+        <li>Adobe XD</li>
+        <li>Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Premier Pro</li>
+        <li>Visual Studio Code</li>
+    </ul>
+</div>
+</div>
+
+<!-----------------------------
+1. Semester Front page pic 
+------------------------------->
+<div class="picture" style="text-align: center;">
+    <img src="images/semester1.jpg" style="width: 600px; display: block;" alt="Forside billede af computer fra unsplash">
+    </div>
+</div>
+
+<!-------------------
+Javascript & jQuery
+-------------------->
+
+     <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Scrollbar -->
     <script src="js/scrollbar.js"></script>
-
-
+ 
     <!-- Include -->
     <script src="js/include.js"></script>
-
-    <!-- Knap der tager en op i toppen -->
+ 
+    <!-- To the top button -->
     <script src="js/topknap.js"></script>
 
-  
-  <!-- Kald includeHTML scriptet -->
-    <script>
-    includeHTML();
-    </script>
+    <!-- Include script called -->
+     <script>
+     includeHTML();
+     </script>
 
 </body>
 

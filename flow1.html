@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!----------
+Head section
+----------->
 <head>
     <!-- Meta-Tags -->
     <meta charset="utf-8">
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -28,19 +31,24 @@
     <link rel="icon" href="images/logo.png">
 </head>
 
-<body>
-    <!-- Sidebaren -->
-    <div w3-include-html="sidebar.html"></div>  
-
-<!---------------------
-     Sideindhold 
----------------------->
+<!-----------
+Page-content 
+------------>
+<body> 
 <div class="wrapper">
+
+<!------
+Sidebar 
+-------->
+<div w3-include-html="sidebar.html"></div>   
+
     <div class="content" id="content">
- 
-      <!-- Åben/Luk sidebar knap -->
+       
+<!-----------------------
+Open/Close sidebar button 
+------------------------>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 50%;">
             <button type="button" id="sidebarCollapse" class="btn">
                 <i class="fas fa-align-left"></i>
                 <span></span>
@@ -48,36 +56,51 @@
         </div>
       </nav>
 
-    <!-- Titel + Flowbeskrivelse -->
-    <div class="titel">
-    <h3>
+<!-----------------------
+Title + Flowdescription 
+------------------------>
+<section id="title">
+    <div class="title">
+     <h3>
         Flow 1 - Billedebehandling & Adobe XD
-    </h3>
+     </h3>
 
-    <h5>
+     <h5>
         Vi har i dette flow arbejdet med billedebehandling i Photoshop. 
         Vi havde til opgave at redigere i et billede vi selv havde taget. 
-    </h5>
+     </h5>
     </div>
+</section>
 
-    <!-- Fokuspunkter -->
-    <div class="fokuspunkter">
-    <h4>
-        Fokuspunkter Flow 1
-    </h4>
+<!------------------
+Focus points in flow
+------------------->
+<section id="focuspoints">
+    <div class="focuspoints">
 
-    <p>
+        <h6>Fokuspunkter</h6>
+     <p>
         <ul>
-            <li>Digital billedbehandling og Adobe Photoshop</li>
-            <li>Prototyping og Adobe XD</li>
+            <li>Digital billedbehandling</li>
+            <li>Prototyping</li>
             <li>Portfolio og projektdokumentation</li>
             <li>Designteori</li>
         </ul>
-    </p>
-    </div>
 
-    <!-- Opgavebeskrivelse opgave 1.1-->
-    <div class="flow1">
+        <h6>Programmer anvendt</h6>
+        <ul>
+            <li>Adobe XD</li>
+            <li>Photoshop</li>
+        </ul>
+     </p>
+    </div>
+</section>
+
+<!---------------------
+Project description 1.1
+---------------------->
+<section id="flow1">
+    <div class="projectdescription">
     <h2>
         Opgave Flow 1.1 - Billedebehandling
     </h2>
@@ -87,8 +110,16 @@
     </h4>
 
     <p>
-        I denne opgave skulle vi tage billeder i København som vi derefter skulle behandle i photoshop.
+        I denne opgave skulle vi tage billeder i København ud fra nogle bestemte emner. 
         <br>
+        Efterfølgende skulle vi hjem og billedebehandle disse billede i photoshop. 
+        <br>
+        Nogen af de ting vi skulle gøre ved billedet var følgende:
+        <ul>
+            <li>Ændre farverne</li>
+            <li>Fjerne noget fra billedet</li>
+            <li>Indsætte noget på billedet</li>
+        </ul>
         Hent den fulde opgavebeskrivelse nedenfor.
     </p>
 
@@ -97,25 +128,29 @@
         Opgavebeskrivelse
         </a>
     </button>
-
-    <!-- Billeder fra opgave -->
-    
-    <h4>
+    </div>
+<!-------------------
+Pictures from project
+-------------------->
+    <div class="pictures">
+     <h4>
         Billeder fra opgaven
-    </h4>
+     </h4>
 
-    <img src="images/portfolio/flow1/photoshopbilledebefore.png" alt="Photoshop billede før">
+     <p>
+         Nedenfor kan du se billederne fra photoshop opgaven.
+     </p>
 
-    <p>
-        Jeg valgte dette billede fra vores opgave til at lave billederedigering på.
+     <h6>Før billede</h6>
+     <img src="images/portfolio/flow1/photoshopbilledebefore.png" alt="Photoshop billede før">
+
+     <h6>Efter billede</h6>
+     <img src="images/portfolio/flow1/photoshopbillede.png" alt="Photoshop billede efter">
+
+     <p>
+        Jeg valgte dette billede af et hegn nær Christiania i København til at redigere i vores opgave.
         <br>
         Grunden til jeg valgte netop dette billede er jeg synes det havde flotte farver og tænkte der var meget at arbejde med.
-    </p>
-
-    <img src="images/portfolio/flow1/photoshopbillede.png" alt="Photoshop billede efter">
-
-    <p>
-        Ovenfor er det endelige billede. 
         <br>
         Jeg har redigeret følgende ting på billedet:
         <ul>
@@ -125,53 +160,71 @@
             <li>Indsat fugle i himlen</li>
             <li>Indsat cykel på fortovet</li>
         </ul>
-    </p>
-    
+     </p>
     </div>
-
-
-    <!-- Opgavebeskrivelse opgave 1.2 -->
-    <h2>
+     
+<!------------------
+Project description 1.2
+------------------->
+    <div class="projectdescription">
+     <h2>
         Opgave Flow 1.2 - Mock-up portefølje
-    </h2>
+     </h2>
 
-    <h4>
+     <h4>
         Opgavebeskrivelse opgave 1.2 
-    </h4>
+     </h4>
 
-    <p>
-        I denne opgave skulle vi lave vores portefølje i adobe XD.
+     <p>
+        I denne opgave skulle vi ved hjælp af adobe XD udarbejde en prototype af vores kommende portefølje
         <br>
         Få den fulde opgavebeskrivelse nedenunder.
-    </p>
+     </p>
 
-    <button class="btn btn-light">
+     <button class="btn btn-light">
         <a add target ="_blank" href="pdf-filer/Flow1.2opgavebeskrivelse.pdf">
         Opgavebeskrivelse
         </a>
-    </button>
+     </button>
+    </div>
 
-    <!-- Min tilgang til opgaven -->
-    <h4>
+<!------------------
+Concept development
+------------------->
+    <div class="conceptdevelopment">
+     <h4>
         Konceptudvikling
-    </h4>
+     </h4>
 
-    <p>
+     <p>
         Til at udarbejde min portfolio har jeg gjort brug af konceptudvikling. 
         <br>
         Vi havde på dette tidspunkt ikke haft meget om konceptudvikling 
         så der er derfor mere fokus på arbejdsgangen. 
         <br>
         Jeg har sat et link til en PDF hvor der er mere om arbejdsgangen.
+     </p>
+
+     <h6>
+        Designet
+    </h6>
+
+    <p>
+        I forhold til designet af min portefølje vidste jeg at jeg ville have en lys og brugervenlig side. 
+        <br>
+        Jeg valgte lyserød som mine farver da jeg synes dette var en let og venlig farve, fremfor feks en mørk og sort side.
     </p>
 
-    <button class="btn btn-light">
+     <button class="btn btn-light">
         <a add target ="_blank" href="pdf-filer/PorteføljeXD.pdf">
         Konceptudvikling
         </a>
-    </button>
-
-    <!-- Billeder fra opgaven -->
+     </button>
+    </div>
+<!-------------------
+Pictures from project
+-------------------->
+    <div class="pictures">
     <h4>
         Billeder af mock-up
     </h4>
@@ -194,19 +247,24 @@
 
     <img src="images/portfolio/flow1/mockupommig.png" alt="Mock-up om mig side">
 
-</div>
+    </div>
+</section>
 
+<!-------------------
+To the top button
+-------------------->
 <button
     type="button"
     class="btn btn-floating btn-sm"
     id="btn-back-to-top">
   <i class="fas fa-arrow-up"></i>
 </button>
-
-
 </div>
 
-     <!-- jQuery CDN - Slim version (=without AJAX) -->
+<!-------------------
+Javascript & jQuery
+-------------------->
+     <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <!-- Popper.JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -214,21 +272,20 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
- 
-     <!-- Scrollbar -->
-     <script src="js/scrollbar.js"></script>
+
+    <!-- Scrollbar -->
+    <script src="js/scrollbar.js"></script>
  
     <!-- Include -->
     <script src="js/include.js"></script>
  
-    <!-- Knap der tager en op i toppen -->
-    <script src="js/topknap.js"></script>
+    <!-- To the top button -->
+    <script src="js/topbutton"></script>
 
-    <!-- Kald includeHTML scriptet -->
+    <!-- Include script called -->
      <script>
      includeHTML();
      </script>
  
 </body>
-
 </html>

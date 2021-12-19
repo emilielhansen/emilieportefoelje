@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!----------
+Head section
+----------->
     <head>
         <!-- Meta-Tags -->
         <meta charset="utf-8">
@@ -17,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         
         <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
         
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -28,80 +31,105 @@
         <link rel="icon" href="images/logo.png">
     </head>
 
-<body>
-<!-- Sidebaren -->
-<div w3-include-html="sidebar.html"></div>
-
 <!---------------------
      Sideindhold 
 ---------------------->
+<body>
 <div class="wrapper">
+
+<!------
+Sidebar 
+-------->
+<div w3-include-html="sidebar.html"></div>
+
     <div class="content" id="content">
 
-      <!-- Åben/Luk sidebar knap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn">
-                <i class="fas fa-align-left"></i>
-                <span></span>
+<!-----------------------
+Open/Close sidebar button 
+------------------------>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" style="width: 50%;">
+        <button type="button" id="sidebarCollapse" class="btn">
+            <i class="fas fa-align-left"></i>
+            <span></span>
+        </button>
+    </div>
+  </nav>
+
+<!-----------------------
+Title + Flowdescription 
+------------------------>
+<section id="title">
+    <div class="title">
+        <h3>
+            Flow 2 - Prototype & HTML, Byg din portfolio
+        </h3>
+        <h5>
+            I dette flow har vi haft om om prototyper og programmering i HTML og css. 
+        </h5>
+    </div>
+</section>
+
+<!------------------
+Focus points in flow
+------------------->
+<section id="focuspoints">
+    <div class="focuspoints">
+        <h6> Fokuspunkter</h6>
+        <p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+            </ul>
+        </p>
+
+        <h6>
+            Programmer anvendt
+        </h6>
+        <p>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Adobe XD</li>
+                <li>Adobe Illustrator</li>
+            </ul>
+        </p>
+
+    </div>
+</section>
+
+<!---------------------
+Project description 2.3
+---------------------->
+<section id="flow2">
+    <div class="projectdescription">
+        <h2>
+            Opgave Flow 2.3 - Kodning af hjemmeside
+        </h2>
+        
+        <h4>
+            Opgavebeskrivelse
+        </h4>
+        
+        <p>
+            Vi skulle i denne opgave videreudvikle vores portefølje prototype fra flow 1. 
+            <br>
+            Vores mock-up skulle nu laves med HTML og CSS og skulle kunne tilgås fra en webbrowser.
+            <br>
+            Hent den fulde opgavebeskrivelse nedenfor.
+            </p>
+            
+            <button class="btn btn-light">
+                <a add target ="_blank" href="pdf-filer/flow2.3opgavebeskrivelse.pdf">
+                    Opgavebeskrivelse
+                </a>
             </button>
-        </div>
-      </nav>   
+    </div>
 
-<!-- Titel + Flowbeskrivelse -->
-<div class="titel">
-<h3>
-    Flow 2 - Prototype & HTML, Byg din portfolio
-</h3>
-<h5>
-    I dette flow har vi haft om om prototyper og programmering i HTML og css. 
-</h5>
-</div>
-
-<!-- Fokuspunkter -->
-<div class="fokuspunkter">
-<h4>
-    Fokuspunkter
-</h4>
-
-<p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Flexbox</li>
-    </ul>
-</p>
-</div>
-
-<!-- Opgavebeskrivelse -->
-<div class="flow2">
-
-<h2>
-    Opgave Flow 2.3 - Kodning af hjemmeside
-</h2>
-
-<div class="opgavebeskrivelse">
-<h4>
-    Opgavebeskrivelse
-</h4>
-
-<p>
-    Vi skulle i denne opgave videreudvikle vores portefølje. 
-    <br>
-    Vores mock-up skulle nu laves som en rigtig hjemmeside og sættes op på vores eget domæne.
-    <br>
-    Hent den fulde opgavebeskrivelse nedenfor.
-</p>
-
-<button class="btn btn-light">
-    <a add target ="_blank" href="pdf-filer/flow2.3opgavebeskrivelse.pdf">
-    Opgavebeskrivelse
-    </a>
-</button>
-
-</div>
-
-<!-- Billeder af hjemmesiden -->
+<!-----------------
+Pictures of website
+------------------>
+<div class="pictures">
 <h4>
 Om hjemmesiden
 </h4>
@@ -124,42 +152,47 @@ Om hjemmesiden
 </button>
 
 </div>
+</section>
 
+<!---------------
+To the top button
+---------------->
 <button
     type="button"
     class="btn btn-floating btn-sm"
     id="btn-back-to-top">
   <i class="fas fa-arrow-up"></i>
 </button>
-
 </div>
 
 
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-------------------
+Javascript & jQuery
+-------------------->
+
+     <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Scrollbar -->
     <script src="js/scrollbar.js"></script>
+ 
+    <!-- Include -->
+    <script src="js/include.js"></script>
+ 
+    <!-- To the top button -->
+    <script src="js/topbutton.js"></script>
 
-<!-- Include -->
-<script src="js/include.js"></script>
-
-    <!-- Knap der tager en op i toppen -->
-   <script src="js/topknap.js"></script>
-  
-  <!-- Kald includeHTML scriptet -->
-    <script>
-    includeHTML();
-    </script>
+    <!-- Include script called -->
+     <script>
+     includeHTML();
+     </script>
 
 </body>
-
-
 </html>

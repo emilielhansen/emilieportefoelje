@@ -1,93 +1,114 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <!-- Meta-Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!----------
+Head section
+----------->
+<head>
+  <!-- Meta-Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/flow.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/flow.css">
 
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    
-    <!-- Titel + Logo -->
-    <title>Flow 4</title>
-    <link rel="icon" href="images/logo.png">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  
+  <!-- Titel + Logo -->
+  <title>Flow 4</title>
+  <link rel="icon" href="images/logo.png">
 </head>
 
-<body>
-  <!-- Sidebaren -->
-  <div w3-include-html="sidebar.html"></div>
+<!-----------
+Page-content 
+------------>
+<body> 
+  <div class="wrapper">
 
-<!---------------------
-      Sideindhold 
----------------------->
-<div class="wrapper">
+<!------
+Sidebar 
+-------->
+<div w3-include-html="sidebar.html"></div>   
+
   <div class="content" id="content">
 
-      <!-- Åben/Luk sidebar knap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn">
-                <i class="fas fa-align-left"></i>
-                <span></span>
-            </button>
-        </div>
-      </nav>
-   <!-- Titel + Flowbeskrivelse -->
-   <div class="titel">
-<h3>
-  Flow 4 - SoMe Videoproduktion
-</h3>
-<h5>
-  I vores flow 4 har vi haft om videoredigering i PremierPro. 
-  Vi har haft fokus på dette men også på at lave responsive sider med bootstrap som kan anvendes på både telefon og web.
-</h5>
-</div>
+<!-----------------------
+Open/Close sidebar button 
+------------------------>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" style="width: 50%;">
+      <button type="button" id="sidebarCollapse" class="btn">
+          <i class="fas fa-align-left"></i>
+          <span></span>
+      </button>
+  </div>
+</nav>
 
-<!-- Fokuspunkter -->
-<div class="fokuspunkter">
-  <h4>
-    Fokuspunkter
-  </h4>
-
+<!-----------------------
+Title + Flowdescription 
+------------------------>
+<section id="title">
+   <div class="title">
+     <h3>
+       Flow 4 - SoMe Videoproduktion
+      </h3>
+      <h5>
+        I vores flow 4 har vi haft om videoredigering i PremierPro. 
+        Vi har haft fokus på dette men også på at lave responsive sider med bootstrap som kan anvendes på både telefon og web.
+      </h5>
+    </div>
+</section>
+<!------------------
+Focus points in flow
+------------------->
+<section id="focuspoints">
+<div class="focuspoints">
+  <h6>Fokuspunkter</h6>
   <p>
     <ul>
         <li>Video og virkemidler</li>
         <li>Bootstrap</li>
+    </ul>
+  </p>
+
+  <h6>Programmer anvendt</h6>
+  <p>
+    <ul>
         <li>Illustrator</li>
         <li>Premiere Pro</li>
     </ul>
   </p>
-
 </div>
+</section>
 
-
-<!-- Opgavebeskrivelse -->
-<h2>
-  Opgave Flow 4.6 - Videoproduktion & Landingpage
-</h2>
-
-<div class="opgavebeskrivelse">
-  <h4>
-    Opgavebeskrivelse
-  </h4>
-  <p>
-  I flow 4 skulle vi lave et sæt video til at promovere et produkt eller en service. 
-  Den skulle være designet til en SoMe platform og have en landingpage som beskriver produktet og virksomheden.
+<!---------------------
+Project description 4.6
+---------------------->
+<section id="flow4">
+  <div class="projectdescription">
+    <h2>
+      Opgave Flow 4.6 - Videoproduktion & Landingpage
+    </h2>
+    
+    <div class="opgavebeskrivelse">
+      <h4>
+        Opgavebeskrivelse
+      </h4>
+      <p>
+  I flow 4 havde vi til opgave at lave et sæt videoer til at promovere et produkt eller en service til en eksisterende virksomhed. 
+  Den skulle designes til en SoMe platform og have en landingpage som beskriver produktet og virksomheden.
   Hent den fulde opgavebeskrivelse nedenfor.
   </p>
 
@@ -96,33 +117,44 @@
       Opgavebeskrivelse
     </a>
   </button>
+</div>
 
+<!---------------------
+Conceptdevelopment
+---------------------->
+<div class="conceptdevelopment">
   <h4>
     Konceptudvikling
   </h4>
-
+  
   <p>
-  Vi valgte Føtex som vores virksomhed, og har valgt at fokusere på deres opskrifter.
-  <br>
-  I forhold til konceptudvikling har vi gjort brug af brainstorming, skitser, storyboards og styleguide.
-  <br>
-
-<h6>
-  Styleguide
-</h6>
-
-  Nedenfor kan du se vores styleguide hvor at vi viser hvilke farver og den overordnede stemning.
-  <br>
+    Vi valgte Føtex som vores virksomhed, og har valgt at fokusere på deres opskrifter som man kan læse på deres hjemmeside.
+    <br>
+    I forhold til konceptudvikling har vi gjort brug af brainstorming, skitser, storyboards og styleguide.
+    <br>
+    
+    <h6>
+      Styleguide
+    </h6>
+    
+    Til vores styleguide har vi brugt Føtex' farvepallette som primært består af blå, hvid og grå. 
+    <br>
+    Desuden har vi brugt billeder af mad fra deres hjemmeside og en træ baggrund som skulle symbolisere det bord som vi har filmet vores video på. 
+    <br>
+    Nedenfor kan du se vores styleguide hvor at vi viser hvilke farver og den overordnede stemning.
+    <br>
   </p>
 
   <img src="images/portfolio/flow4/fotexstyleguide.png" alt="Flow 4 Styleguide">
-
-<h6>
-  Logo
-</h6>
+  
+  <h6>
+    Logo
+  </h6>
 
   <p>
     Vi har også lavet vores eget logo i illustrator, da dette var et af kravene til opgaven.
+    <br>
+    Vi har brugt Føtex' eget logo og givet det twist, så det stadig var tro til virksomheden.
   </p>
 
   <img src="images/portfolio/flow4/foetex_logo.png" alt="Flow 4 Føtex logo">
@@ -133,20 +165,28 @@
 
   <button class="btn btn-light">
     <a add target ="_blank" href="pdf-filer/Video-projekt.pdf">
-      Konceptudvikling
+      Konceptudvikling powerpoint
     </a>
   </button>
+</div>
 
+<!---------------------
+Video 
+---------------------->
+<div class="video">
   <h4>
-    Video
+    SoMe Video
   </h4>
 
   <p>
-    Vi skulle lave tre videoer til at reklamere for vores produkt.
+    Vi skulle lave tre videoer til at reklamere for vores produkt, hver med forskellige længder. 
+    <br>
+    En lang video: 30 sekunder. En kort video: 15 sekunder. En ultrakort video: 5 sekunderr. 
     <br>
     Nedenfor kan du se den lange version af vores video, men jeg har også linket til den korte og ultra korte.
   </p>
 
+  <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/-RlY9P56HZg" title="YouTube video player" 
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -164,17 +204,22 @@
   Ultra kort video
   </a>
 </button>
+</div>
 
+<!---------------------
+Landingpage 
+---------------------->
+<div class="landingpage">
   <h4>
     Landingpage
   </h4>
 
 <p>
-  Til sidst skulle vi lave en landingpage som er den side man ville ende på efter video.
+  Til sidst skulle vi lave en landingpage til vores video, altså den side hvor man kan læse mere om produktet.
   <br>
-  Vores fokus var at lave en informativ side men også en som var responsiv.
+  Vores fokus var at lave en informativ side men også en som var responsiv, så man kunne se den på alle platforme, da SoMe ofte foregår på telefonen.
   <br>
-  Nedenfor kan du se vores landingpage men jeg har også indsat linket længere nede.
+  Nedenfor kan du se vores landingpage men jeg har også indsat linket længere nede så man kan se den responsive del.
 </p>
 
 <img src="images/portfolio/flow4/føtexlandingpage.png" alt="Flow 4 Styleguide">
@@ -185,8 +230,12 @@
   </a>
 </button>
 
-  </div>
+</div>
+</section>
 
+<!---------------------
+Back to the top button
+---------------------->
   <button
   type="button"
   class="btn btn-floating btn-sm"
@@ -196,30 +245,31 @@
 
 </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-------------------
+Javascript & jQuery
+-------------------->
+     <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- Scrollbar -->
     <script src="js/scrollbar.js"></script>
+ 
+    <!-- Include -->
+    <script src="js/include.js"></script>
+ 
+    <!-- To the top button -->
+    <script src="js/topbutton.js"></script>
 
-<!-- Include -->
-<script src="js/include.js"></script>
-
-    <!-- Knap der tager en op i toppen -->
-   <script src="js/topknap.js"></script>
-  
-  <!-- Kald includeHTML scriptet -->
-    <script>
-    includeHTML();
-    </script>
+    <!-- Include script called -->
+     <script>
+     includeHTML();
+     </script>
 
 </body>
-
-
 </html>

@@ -1,7 +1,16 @@
-#footer .tekst{
+/*************
+Footer design  
+*************/
+#footer{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#footer .text{
     color: black;
     display:flex;
     justify-content:center;
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
 
 #footer .bg-light{
@@ -12,15 +21,17 @@
     font-size: 15px;
     align-content: center;
     padding: 0 20% 0 20%;
-    margin-top: 1em; 
-text-align: center;}
+    margin-top: 15px; 
+    text-align: center;}
+
+/*****************
+Responsive design  
+*****************/
     @media screen and (max-width: 1024px) {
-      /* line 982, scss/style.scss */
       #footer p {
         padding: 0 10% 10px 10%; 
         text-align: center;} }
     @media screen and (max-width: 640px) {
-      /* line 982, scss/style.scss */
       #footer p {
         padding: 0;
         font-size: 15px;

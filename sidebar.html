@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!----------
+Head section
+----------->
     <head>
         <!-- Meta-Tags -->
         <meta charset="utf-8">
@@ -23,31 +26,33 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
         
-        <!-- Titel + Logo -->
+        <!-- Title + Logo -->
         <title>Sidebar</title>
         <link rel="icon" href="images/logo.png">
     </head>
 
-<body style="font-family: 'Source Sans Pro', sans-serif;">
-    <div class="wrapper">
+<!-----------
+Page-Content
+------------>
+<body>
+<div class="wrapper">
 
-    <!-- Logo i højre side af siden -->
-    <div class="fixed-top" style="margin: 10px;">
-      <a href="index.html">
-         <img src="images/logo.png" alt=""width="30" height="30" style="float:right;" >
-      </a>
-    </div>
+<!-- Logo to the left -->
+      <a class="fixed-top" style="margin: 10px" href="index.html"> <img src="images/logo.png" alt=""width="30" height="30" style="float:right;" ></a>
+<!-----------
+Sidebar
+------------>
+    <nav id="sidebar">
 
-        <!-- Sidebar  -->
-        <nav id="sidebar">
+<!-- Sidebar-header -->
+        <div class="sidebar-header" onclick="location.href='1semester.html';" style= "cursor: pointer;">
+          <a href="1semester.html"> 
+            <h3>1. Semester</h3>
+          </a>
+        </div>
 
-            <!-- Sidebar-header -->
-            <div class="sidebar-header" onclick="location.href='1semester.html';" style= "cursor: pointer;">
-            <a href="1semester.html"> <h3>1. Semester</h3></a>
-            </div>
-
-            <!-- Lister over flows -->
-            <div id="listen">
+<!-- List of flows -->
+        <div id="list">
             <ul class="list-unstyled components">
                 <li>
                     <a class="hover" href="flow1.html">Flow 1</a>
@@ -65,19 +70,23 @@
                     <a class="hover" href="flow5.html">Flow 5</a>
                 </li>
 
-                <!-- Tilbage til forsiden knap -->
+<!-- Tilbage til forsiden knap -->
                 <li>
-                    <a class="tilbageknap" href="index.html" style="position:fixed;">Tilbage til forsiden</a>
+                    <a class="hover" href="index.html">Tilbage til forsiden</a>
                 </li>
             </ul>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+</div>
 
+<!-----------------
+Javascript & jQuery
+------------------>
+<!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    
-    <!-- Scrollbar -->
+<!-- Scrollbar in navbar -->
     <script src="js/scrollbar.js"></script>
-</body>
 
+</body>
 </html>
