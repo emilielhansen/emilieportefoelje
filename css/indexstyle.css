@@ -227,7 +227,7 @@ Contact section
 /* Responsive design font size */
   @media screen and (max-width: 640px) {
     #contact h3 {
-    font-size: 40px; } 
+    font-size: 30px; } 
 }
 
 /* Paragraph */

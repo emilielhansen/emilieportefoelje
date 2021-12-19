@@ -7,10 +7,3 @@ $(document).ready(function () {
     });
 
 });
-
-$(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#content').toggleClass('luk');
-    });
-
-});

@@ -23,17 +23,28 @@ Page content styling
    width: calc(100% + 250px);
 }
 
-.textcolumn{
+/***************
+1. Semester Page
+****************/
+.row{
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+  padding-top: 50px;
+}
 
-.lists ul li{
+/* Responsive design */
+@media screen and (max-width: 1300px) {
+    .row {
+      padding: 0; } }
+
+.row ul li{
     padding: 0 20px 0px 20px;
 }
 
-.lists h4{
+.row h4{
     padding: 0 20px 20px 20px;
+    text-align: center;
 }
 
 /************
@@ -53,7 +64,6 @@ Text Styling
     text-transform: uppercase; 
     font-weight: bolder;
     font-size: 35px;
-    margin-left: 35px;
 }
 
 #content h4{
@@ -66,7 +76,6 @@ Text Styling
     text-align: center;
     font-size: 16px;
     margin-bottom: 40px;
-    margin-left: 35px;
 }
 
 #content h6{
